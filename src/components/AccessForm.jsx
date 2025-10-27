@@ -1,8 +1,6 @@
 import { useState } from "react";
 import logoManuscript from '../assets/manuscript.webp';
-import EmailIcon from './icons/EmailIcon.jsx';
-import LockIcon from './icons/LockIcon.jsx';
-import ShieldIcon from './icons/ShieldIcon.jsx';
+import { EmailIcon, LockIcon, ShieldIcon} from './icons';
 
 export default function AccessForm({ onAccess }) {
   const [email, setEmail] = useState("");

@@ -1,0 +1,12 @@
+export { default as AppleIcon } from './AppleIcon';
+export { default as BookIcon } from './BookIcon';
+export { default as DownloadIcon } from './DownloadIcon';
+export { default as EmailIcon } from './EmailIcon';
+export { default as HeartIcon } from './HeartIcon';
+export { default as HelpCircleIcon } from './HelpCircleIcon';
+export { default as LockIcon } from './LockIcon';
+export { default as LogOutIcon } from './LogOutIcon';
+export { default as ShieldIcon } from './ShieldIcon';
+export { default as SmartphoneIcon } from './SmartphoneIcon';
+export { default as StarIcon } from './StarIcon';
+export { default as UserIcon } from './UserIcon';
