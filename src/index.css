@@ -4,3 +4,15 @@
 :root {
   font-family: "DM Sans", sans-serif;
 }
+
+p, span, li, label, a {
+  letter-spacing: 0.2px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 0.5px;
+}
+
+button, input, optgroup, select, textarea {
+  letter-spacing: 0.2px;
+}
