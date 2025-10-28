@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from '../../assets/manuscript.webp';
 import FAQTab from "./tabs/FAQ.jsx";
 import ResultsTab from "./tabs/Results.jsx";
@@ -15,9 +15,17 @@ import {
 } from "../icons/index.jsx";
 
 export default function MainContent({ onLogout }) {
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    setShowPopup(true);
+    const timer = setTimeout(() => setShowPopup(false), 5000); // auto-hide after 5s
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div
-      className="min-h-screen animate-fade-in-slow pb-24"
+      className="min-h-screen animate-fade-in-slow pb-24 relative"
       style={{
         background:
           "radial-gradient(at center top, rgb(24, 36, 88) 0%, rgb(11, 18, 60) 100%) fixed",
@@ -25,6 +33,8 @@ export default function MainContent({ onLogout }) {
     >
       <Header onLogout={onLogout} />
       <NavTabs />
+
+      {showPopup && <WelcomePopup />}
     </div>
   );
 }
@@ -112,5 +122,32 @@ function NavTabs() {
         {activeTab === 4 && <ProfileTab />}
       </main>
     </>
+  );
+}
+
+function WelcomePopup() {
+  return (
+    <div className="fixed top-4 right-4 z-[10000] animate-fade-in">
+      <div className="bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-3 rounded-xl shadow-2xl flex items-center gap-3 border border-green-400/30 backdrop-blur-sm">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="lucide lucide-check-circle w-5 h-5"
+        >
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+          <path d="m9 11 3 3L22 4"></path>
+        </svg>
+        <span className="font-medium text-[17px]">
+          Welcome back! Your spiritual materials are safely loaded.
+        </span>
+      </div>
+    </div>
   );
 }

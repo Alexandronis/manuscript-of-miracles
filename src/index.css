@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Marcellus:wght@400&family=DM+Sans:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 
+/* common */
 :root {
   font-family: "DM Sans", sans-serif;
+}
+
+body {
+  background: radial-gradient(ellipse at center top,#182458,#0b123c);
 }
 
 p, span, li, label, a {
@@ -22,3 +27,35 @@ button, input, optgroup, select, textarea {
 a:hover, button:hover {
   cursor: pointer;
 }
+
+/* popup animations */
+@layer utilities {
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in-slow {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 1s ease-out forwards;
+  }
+
+  .animate-fade-in-slow {
+    animation: fade-in-slow 2s ease-out forwards;
+  }
+}
+
