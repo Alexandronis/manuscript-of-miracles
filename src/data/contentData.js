@@ -1,6 +1,9 @@
 import contentImage1 from "../assets/content-1.webp";
 import contentImage2 from "../assets/content-2.webp";
 import contentImage3 from "../assets/content-3.webp";
+import contentImage4 from "../assets/content-4.webp";
+import contentImage5 from "../assets/content-5.webp";
+import contentImage6 from "../assets/content-6.webp";
 import { AppleIcon, DownloadIcon, HelpCircleIcon, SmartphoneIcon } from "../components/icons/index.jsx";
 
 export const modules = [
@@ -80,6 +83,64 @@ export const modules = [
       {
         title: "3 - Calendar with Checklists",
         pdfUrl: "https://drive.google.com/file/d/1Qm7tFXqIKcI8sluznLXt47dGePZ2hpwg/preview",
+      },
+    ],
+  },
+  {
+    title: "Module 4 — 40-Day Divine Journey — Advanced Miracle Path",
+    img: contentImage4,
+    steps: [
+      {
+        title: "1 - The Chosen Ones' Activation Ritual",
+        pdfUrl: "https://drive.google.com/file/d/1XoSpOyIhsES27T0STWKRngDjKMTwnEX8/preview",
+      },
+      {
+        title: "2 - Video - Activation Ritual",
+        pdfUrl: "https://drive.google.com/file/d/1xNsGdeI8LA9Ci8fwlTKHaBTuKg983pvp/preview",
+      },
+      {
+        title: "3 - 40 Guided Daily Prayers - Day 1 to Day 20",
+        pdfUrl: "https://drive.google.com/file/d/1fm8yw3X43kQ9BCOFTHWDPq0tvQltvKe_/preview",
+      },
+      {
+        title: "4 - 40 Guided Daily Prayers - Day 21 to Day 40",
+        pdfUrl: "https://drive.google.com/file/d/11YUXBTVNwGsY9BM2sFzgeEEydzj93P-i/preview",
+      },
+    ],
+  },
+  {
+    title: "Module 5 — Secret of the Hebrew Prayer",
+    img: contentImage5,
+    steps: [
+      {
+        title: "1 - 7 Hebrew Prayers",
+        pdfUrl: "https://drive.google.com/file/d/13Bd-fgJOkRKX_MbmWvtycRyPCzzQpZSM/preview",
+      },
+    ],
+  },
+  {
+    title: "Module 6 — Forbidden Psalms of King David",
+    img: contentImage6,
+    steps: [
+      {
+        title: "1 - The 7 “Forbidden” Psalms",
+        pdfUrl: "https://drive.google.com/file/d/1sjlvcMUbvRtVFvJZJIz-wnIxcTaeXZBy/preview",
+      },
+      {
+        title: "2 - The Psalm of Divine Justice",
+        pdfUrl: "https://drive.google.com/file/d/1k3qtQsaO_EzhaODky8dbRDt7FH7iCtBu/preview",
+      },
+      {
+        title: "3 - Audio - Week 1",
+        pdfUrl: "https://drive.google.com/file/d/1A5rq2YCcq3Zn8ogShTGTF8oCqGjL6tQY/preview",
+      },
+      {
+        title: "4 - Audio - Week 2",
+        pdfUrl: "https://drive.google.com/file/d/1VcCnyR6yyUEIP6fM3puYuqYJSTPYZHOG/preview",
+      },
+      {
+        title: "5 - Audio - Week 3",
+        pdfUrl: "https://drive.google.com/file/d/184SFA-D-J4MW1HCh2BqBmEi_0EvOOeE_/preview",
       },
     ],
   },
