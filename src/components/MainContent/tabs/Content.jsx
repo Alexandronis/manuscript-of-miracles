@@ -28,7 +28,7 @@ function ContentTab() {
       <ContentModules onOpenStep={handleOpenStep} watchedSteps={watchedSteps} />
 
       {activeModule && (
-        <VideoModal
+        <StepModal
           module={activeModule}
           stepIndex={activeStepIndex}
           onClose={handleCloseModal}
@@ -189,16 +189,20 @@ function ContentModules({ onOpenStep, watchedSteps }) {
   );
 }
 
-function VideoModal({ module, stepIndex, onClose, onPrev, onNext }) {
+function StepModal({ module, stepIndex, onClose, onPrev, onNext }) {
   const step = module.steps[stepIndex];
+  const [activeTab, setActiveTab] = useState(step.pdfUrl ? "video" : "video");
 
   const handleDownload = () => {
-    if (!step.videoUrl) return alert("No video URL available to download.");
+    const isVideo = activeTab === "video";
+    const url = isVideo ? step.videoUrl : step.pdfUrl;
+
+    if (!url) return alert(`No ${isVideo ? "video" : "PDF"} available to download.`);
 
     const link = document.createElement("a");
-    link.href = step.videoUrl;
+    link.href = url;
     link.target = "_blank";
-    link.download = `${step.title || "video"}.mp4`;
+    link.download = `${step.title || "lesson"}.${isVideo ? "mp4" : "pdf"}`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -210,10 +214,7 @@ function VideoModal({ module, stepIndex, onClose, onPrev, onNext }) {
       aria-modal="true"
       className="fixed inset-0 z-[100] bg-black/70 backdrop-blur-sm overflow-y-auto overscroll-contain px-4 py-8"
     >
-      <div
-        className="relative mx-auto w-full max-w-4xl bg-[#0d163b] rounded-2xl
-        border border-white/10 shadow-lg max-h-[95vh] flex flex-col animate-fade-in overflow-hidden"
-      >
+      <div className="relative mx-auto w-full max-w-5xl bg-[#0d163b] rounded-2xl border border-white/10 shadow-lg max-h-[95vh] flex flex-col animate-fade-in overflow-hidden">
         {/* Header */}
         <div className="p-4 sm:p-6 border-b border-white/10 flex items-start justify-between sticky top-0 bg-[#0d163b]/95">
           <h3 className="text-xl sm:text-2xl font-bold text-[#f4d36b] leading-snug">
@@ -223,26 +224,68 @@ function VideoModal({ module, stepIndex, onClose, onPrev, onNext }) {
             aria-label="Close modal"
             title="Close (Esc)"
             onClick={onClose}
-            className="ml-4 inline-flex items-center justify-center w-10 h-10 rounded-full
-            bg-[#f6c94c] hover:bg-[#f4d36b] text-[#0a0a0a] text-xl leading-none
-            transition-all duration-200 hover:rotate-90 focus:outline-none
-            focus:ring-2 focus:ring-offset-2 focus:ring-[#f6c94c] focus:ring-offset-[#0d163b]"
+            className="ml-4 inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#f6c94c] hover:bg-[#f4d36b] text-[#0a0a0a] text-xl leading-none transition-all duration-200 hover:rotate-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#f6c94c] focus:ring-offset-[#0d163b]"
           >
             ✕
           </button>
         </div>
 
-        {/* Video */}
+        {/* PDF / Video tab switcher */}
+        {step.pdfUrl && (
+          <div className="px-4 sm:px-6 pt-4">
+            <div className="inline-flex rounded-xl overflow-hidden bg-slate-800 border border-slate-700">
+              <button
+                onClick={() => setActiveTab("pdf")}
+                className={`px-4 py-2 text-sm sm:text-base ${
+                  activeTab === "pdf"
+                    ? "bg-yellow-400 text-slate-900 font-semibold"
+                    : "text-slate-200 hover:bg-slate-700"
+                }`}
+              >
+                📖 PDF
+              </button>
+              <button
+                onClick={() => setActiveTab("video")}
+                className={`px-4 py-2 text-sm sm:text-base ${
+                  activeTab === "video"
+                    ? "bg-yellow-400 text-slate-900 font-semibold"
+                    : "text-slate-200 hover:bg-slate-700"
+                }`}
+              >
+                ▶️ Video
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* Content */}
         <div className="p-0 sm:p-4 flex-1 overflow-y-auto touch-pan-y">
-          <div className="relative w-full h-[60vh] md:h-[65vh]">
-            <iframe
-              src={`${step.videoUrl}?rel=0&modestbranding=1&controls=1`}
-              title={step.title}
-              className="absolute inset-0 w-full h-full rounded-xl"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+          {activeTab === "video" ? (
+            <div className="relative w-full h-[60vh] md:h-[65vh]">
+              <iframe
+                src={`${step.videoUrl}?rel=0&modestbranding=1&controls=1`}
+                title={step.title}
+                className="absolute inset-0 w-full h-full rounded-xl"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          ) : (
+            <div className="w-full h-[65vh] flex items-center justify-center bg-slate-900 rounded-xl">
+              <iframe
+                src={step.pdfUrl}
+                title="PDF Guide"
+                className="w-full h-full rounded-xl"
+              />
+            </div>
+          )}
+
+          <div className="px-4 sm:px-6 pt-4">
+            <p className="text-slate-300 text-sm sm:text-base">
+              Tap <span className="font-semibold">Play</span> to view inside the app. Prefer to save?
+              Use Download.
+            </p>
           </div>
 
           {/* Buttons */}
