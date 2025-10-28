@@ -1,19 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Marcellus:wght@400&family=DM+Sans:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 
-/* common */
+/* =====================
+   Root Variables
+===================== */
 :root {
   --font-primary: "DM Sans", sans-serif;
   --font-heading: "Marcellus", serif;
+
+  --gold: #ffcc42;
+  --gold-gradient-start: #ffd84a;
+  --gold-gradient-end: #ffbe33;
+
+  --bg1: #0b123c;
+  --bg2: #101a48;
+  --bg-gradient-start: #0b123c;
+  --bg-gradient-end: #182458;
+
+  --text-light: #e5e8f0;
+  --text-secondary: #c8ccdf;
+  --text-muted: #b0b5c8;
 }
 
+/* =====================
+   Base Styles
+===================== */
 body {
-  background: radial-gradient(ellipse at center top,#182458,#0b123c);
+  background: radial-gradient(ellipse at center top, var(--bg-gradient-end), var(--bg-gradient-start));
+  background-attachment: fixed;
+  color: var(--text-light);
   font-family: var(--font-primary);
   font-size: 17px;
+  letter-spacing: 0.3px;
+  line-height: 1.5;
+  min-height: 100vh;
 }
 
 p, span, li, label, a {
+  color: var(--text-light);
   font-family: var(--font-primary);
   font-weight: 400;
   letter-spacing: 0.2px;
@@ -21,31 +45,36 @@ p, span, li, label, a {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
+  font-weight: 400;
+  /*color: var(--gold);*/
   letter-spacing: 0.5px;
+  text-shadow: none;
 }
 
 h5, h6 {
+  color: #ffffffd9;
   font-family: var(--font-primary);
+  font-weight: 600;
 }
 
 button, input, optgroup, select, textarea {
+  font-family: var(--font-primary);
   font-weight: 400;
   letter-spacing: 0.2px;
 }
 
-input, select, textarea {
-  font-family: var(--font-primary);
-}
-
 button {
-  font-family: var(--font-primary);
+  cursor: pointer;
+  letter-spacing: 0.4px;
 }
 
 a:hover, button:hover {
   cursor: pointer;
 }
 
-/* popup animations */
+/* =====================
+   Animations
+===================== */
 @layer utilities {
   @keyframes fade-in {
     0% {
@@ -75,4 +104,3 @@ a:hover, button:hover {
     animation: fade-in-slow 2s ease-out forwards;
   }
 }
-
