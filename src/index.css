@@ -37,7 +37,7 @@ body {
 }
 
 p, span, li, label, a {
-  color: var(--text-light);
+  /*color: var(--text-light);*/
   font-family: var(--font-primary);
   font-weight: 400;
   letter-spacing: 0.2px;
