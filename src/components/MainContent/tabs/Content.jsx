@@ -181,7 +181,7 @@ function ContentModules({ onOpenStep, watchedSteps }) {
                           <div className="w-5 h-5 border-2 border-slate-500 rounded-full"></div>
                         )}
                         <span className="font-medium text-sm sm:text-base">
-                          {step.title}
+                          {`${sidx + 1} — ${step.title}`}
                         </span>
                       </div>
                       <span className="text-slate-400 group-hover:text-yellow-400 text-xs sm:text-sm">

@@ -13,11 +13,11 @@ export const modules = [
     img: contentImage1,
     steps: [
       {
-        title: "1 - Step 1 — Important Video",
+        title: "Step 1 — Important Video",
         videoUrl: "https://www.youtube.com/embed/ZJ86XnyJVQc",
       },
       {
-        title: "2 - Step 2 — Your Daily Habit",
+        title: "Step 2 — Your Daily Habit",
         videoUrl: "https://www.youtube.com/embed/_U1AFHpgJBk",
       },
     ],
@@ -27,42 +27,42 @@ export const modules = [
     img: contentImage2,
     steps: [
       {
-        title: "1 - Introduction (Video + Guide)",
+        title: "Introduction (Video + Guide)",
         videoUrl: "https://www.youtube.com/embed/V9qogeoyz3w",
         pdfUrl: "https://drive.google.com/file/d/1a4NyFifF8WZ-n2LJVvOiLpysrEKSRhRj/preview",
       },
       {
-        title: "2 - Day 1 - Restoration",
+        title: "Day 1 - Restoration",
         videoUrl: "https://www.youtube.com/embed/6wTdV8ERNhY",
         pdfUrl: "https://drive.google.com/file/d/1HmZdHfwYLeNs7PlZWV6ft3-9dUd5f6qM/preview",
       },
       {
-        title: "3 - Day 2 - Prosperity",
+        title: "Day 2 - Prosperity",
         videoUrl: "https://www.youtube.com/embed/p4ireRi4wBE",
         pdfUrl: "https://drive.google.com/file/d/1HlOxqse7AjT_cNw9gOd5jIaZA3wMwTyR/preview",
       },
       {
-        title: "4 - Day 3 - Divine Freedom",
+        title: "Day 3 - Divine Freedom",
         videoUrl: "https://www.youtube.com/embed/KVvi9YZqAvY",
         pdfUrl: "https://drive.google.com/file/d/1hgNw1wblH84dHmUqIlNvy18Z9G3AXq0-/preview",
       },
       {
-        title: "5 - Day 4 - Love Renewed",
+        title: "Day 4 - Love Renewed",
         videoUrl: "https://www.youtube.com/embed/ounhQovbKRk",
         pdfUrl: "https://drive.google.com/file/d/1KNF3LTJRWzPiFRt2l0aIzGp7A1lCVGz5/preview",
       },
       {
-        title: "6 - Day 5 - Divine Shield",
+        title: "Day 5 - Divine Shield",
         videoUrl: "https://www.youtube.com/embed/yVIwQqkss3g",
         pdfUrl: "https://drive.google.com/file/d/1al2QVCV1rt140SklwvR9L5y2O2GWiFeM/preview",
       },
       {
-        title: "7 - Day 6 - Sacred Gratitude",
+        title: "Day 6 - Sacred Gratitude",
         videoUrl: "https://www.youtube.com/embed/AVBW-24Ebw8",
         pdfUrl: "https://drive.google.com/file/d/10IlvW0BXci7nbyWooNl1APmyQKWHy6Tl/preview",
       },
       {
-        title: "8 - Day 7 - Day of Grace",
+        title: "Day 7 - Day of Grace",
         videoUrl: "https://www.youtube.com/embed/bMAMLpq1-4w",
         pdfUrl: "https://drive.google.com/file/d/1cAu-43mRUdcxGOIcka13BHy4OWUW5mHK/preview",
       },
@@ -73,16 +73,16 @@ export const modules = [
     img: contentImage3,
     steps: [
       {
-        title: "1 - Guided Audios (INTRO)",
+        title: "Guided Audios (INTRO)",
         videoUrl: "https://drive.google.com/file/d/1wBJXmuQcHq_OWJEjrdd0Lk1QfEBCc5_c/preview",
         pdfUrl: "https://drive.google.com/file/d/1k12q76mKYD3OSXLiNw5UWOX2wLUI-m_x/preview",
       },
       {
-        title: "2 - 7 Guided Audios (AM/PM)",
+        title: "7 Guided Audios (AM/PM)",
         pdfUrl: "https://drive.google.com/file/d/1cAu-43mRUdcxGOIcka13BHy4OWUW5mHK/preview",
       },
       {
-        title: "3 - Calendar with Checklists",
+        title: "Calendar with Checklists",
         pdfUrl: "https://drive.google.com/file/d/1Qm7tFXqIKcI8sluznLXt47dGePZ2hpwg/preview",
       },
     ],
@@ -92,19 +92,19 @@ export const modules = [
     img: contentImage4,
     steps: [
       {
-        title: "1 - The Chosen Ones' Activation Ritual",
+        title: "The Chosen Ones' Activation Ritual",
         pdfUrl: "https://drive.google.com/file/d/1XoSpOyIhsES27T0STWKRngDjKMTwnEX8/preview",
       },
       {
-        title: "2 - Video - Activation Ritual",
+        title: "Video - Activation Ritual",
         pdfUrl: "https://drive.google.com/file/d/1xNsGdeI8LA9Ci8fwlTKHaBTuKg983pvp/preview",
       },
       {
-        title: "3 - 40 Guided Daily Prayers - Day 1 to Day 20",
+        title: "40 Guided Daily Prayers - Day 1 to Day 20",
         pdfUrl: "https://drive.google.com/file/d/1fm8yw3X43kQ9BCOFTHWDPq0tvQltvKe_/preview",
       },
       {
-        title: "4 - 40 Guided Daily Prayers - Day 21 to Day 40",
+        title: "40 Guided Daily Prayers - Day 21 to Day 40",
         pdfUrl: "https://drive.google.com/file/d/11YUXBTVNwGsY9BM2sFzgeEEydzj93P-i/preview",
       },
     ],
@@ -114,7 +114,7 @@ export const modules = [
     img: contentImage5,
     steps: [
       {
-        title: "1 - 7 Hebrew Prayers",
+        title: "7 Hebrew Prayers",
         pdfUrl: "https://drive.google.com/file/d/13Bd-fgJOkRKX_MbmWvtycRyPCzzQpZSM/preview",
       },
     ],
@@ -124,23 +124,23 @@ export const modules = [
     img: contentImage6,
     steps: [
       {
-        title: "1 - The 7 “Forbidden” Psalms",
+        title: "The 7 “Forbidden” Psalms",
         pdfUrl: "https://drive.google.com/file/d/1sjlvcMUbvRtVFvJZJIz-wnIxcTaeXZBy/preview",
       },
       {
-        title: "2 - The Psalm of Divine Justice",
+        title: "The Psalm of Divine Justice",
         pdfUrl: "https://drive.google.com/file/d/1k3qtQsaO_EzhaODky8dbRDt7FH7iCtBu/preview",
       },
       {
-        title: "3 - Audio - Week 1",
+        title: "Audio - Week 1",
         pdfUrl: "https://drive.google.com/file/d/1A5rq2YCcq3Zn8ogShTGTF8oCqGjL6tQY/preview",
       },
       {
-        title: "4 - Audio - Week 2",
+        title: "Audio - Week 2",
         pdfUrl: "https://drive.google.com/file/d/1VcCnyR6yyUEIP6fM3puYuqYJSTPYZHOG/preview",
       },
       {
-        title: "5 - Audio - Week 3",
+        title: "Audio - Week 3",
         pdfUrl: "https://drive.google.com/file/d/184SFA-D-J4MW1HCh2BqBmEi_0EvOOeE_/preview",
       },
     ],
@@ -150,27 +150,27 @@ export const modules = [
     img: contentImage7,
     steps: [
       {
-        title: "1 - Sacred Sleep",
+        title: "Sacred Sleep",
         videoUrl: "https://drive.google.com/file/d/1mMsNIGLgyfHjnAU3bx1qoshB7Oes2cYP/preview",
         pdfUrl: "https://drive.google.com/file/d/10PdUXBQgdg_1Fl84MndsviYvLXQvDYjO/preview",
       },
       {
-        title: "2 - Money Magnet",
+        title: "Money Magnet",
         videoUrl: "https://drive.google.com/file/d/1pwIr3c9CargfQlGTzg_FykV1imFHRkfw/preview",
         pdfUrl: "https://drive.google.com/file/d/1ShTAHVLFPFF_26bu_L9KmuJtgohpCeuW/preview",
       },
       {
-        title: "3 - Ease the Pain",
+        title: "Ease the Pain",
         videoUrl: "https://drive.google.com/file/d/1XDXtuN9g7_FNQzOq3VlogSfobDTx5Ifr/preview",
         pdfUrl: "https://drive.google.com/file/d/1uaN7n8j1Q54jjpLLOZpGWhuCdHoj67XA/preview",
       },
       {
-        title: "4 - Morning Clarity",
+        title: "Morning Clarity",
         videoUrl: "https://drive.google.com/file/d/1oIL4UH4sUIWudX0B9cRnI3FEz_frLPop/preview",
         pdfUrl: "https://drive.google.com/file/d/1GftIGhucWaXb4ujnoJyleZcYmzMNvl75/preview",
       },
       {
-        title: "5 - Sacred Sunday",
+        title: "Sacred Sunday",
         videoUrl: "https://drive.google.com/file/d/1JADHaD4xvgzOp1nEyQsCz8jGR60_cs-O/preview",
         pdfUrl: "https://drive.google.com/file/d/1GGSxyHEwWqBN_Ni7NdviOXwBHmTqNCM2/preview",
       },
