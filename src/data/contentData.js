@@ -4,6 +4,7 @@ import contentImage3 from "../assets/content-3.webp";
 import contentImage4 from "../assets/content-4.webp";
 import contentImage5 from "../assets/content-5.webp";
 import contentImage6 from "../assets/content-6.webp";
+import contentImage7 from "../assets/content-7.webp";
 import { AppleIcon, DownloadIcon, HelpCircleIcon, SmartphoneIcon } from "../components/icons/index.jsx";
 
 export const modules = [
@@ -141,6 +142,37 @@ export const modules = [
       {
         title: "5 - Audio - Week 3",
         pdfUrl: "https://drive.google.com/file/d/184SFA-D-J4MW1HCh2BqBmEi_0EvOOeE_/preview",
+      },
+    ],
+  },
+  {
+    title: "Module 7 — The Divine Frequency",
+    img: contentImage7,
+    steps: [
+      {
+        title: "1 - Sacred Sleep",
+        videoUrl: "https://drive.google.com/file/d/1mMsNIGLgyfHjnAU3bx1qoshB7Oes2cYP/preview",
+        pdfUrl: "https://drive.google.com/file/d/10PdUXBQgdg_1Fl84MndsviYvLXQvDYjO/preview",
+      },
+      {
+        title: "2 - Money Magnet",
+        videoUrl: "https://drive.google.com/file/d/1pwIr3c9CargfQlGTzg_FykV1imFHRkfw/preview",
+        pdfUrl: "https://drive.google.com/file/d/1ShTAHVLFPFF_26bu_L9KmuJtgohpCeuW/preview",
+      },
+      {
+        title: "3 - Ease the Pain",
+        videoUrl: "https://drive.google.com/file/d/1XDXtuN9g7_FNQzOq3VlogSfobDTx5Ifr/preview",
+        pdfUrl: "https://drive.google.com/file/d/1uaN7n8j1Q54jjpLLOZpGWhuCdHoj67XA/preview",
+      },
+      {
+        title: "4 - Morning Clarity",
+        videoUrl: "https://drive.google.com/file/d/1oIL4UH4sUIWudX0B9cRnI3FEz_frLPop/preview",
+        pdfUrl: "https://drive.google.com/file/d/1GftIGhucWaXb4ujnoJyleZcYmzMNvl75/preview",
+      },
+      {
+        title: "5 - Sacred Sunday",
+        videoUrl: "https://drive.google.com/file/d/1JADHaD4xvgzOp1nEyQsCz8jGR60_cs-O/preview",
+        pdfUrl: "https://drive.google.com/file/d/1GGSxyHEwWqBN_Ni7NdviOXwBHmTqNCM2/preview",
       },
     ],
   },
