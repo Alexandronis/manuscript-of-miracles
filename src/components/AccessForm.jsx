@@ -14,11 +14,13 @@ export default function AccessForm({ onAccess }) {
 
   return (
     <div
-      className="min-h-screen flex items-center justify-center p-4 animate-fade-in-slow pb-24"
-      style={{
-        background:
-          "radial-gradient(at center top, rgb(24, 36, 88) 0%, rgb(11, 18, 60) 100%) fixed",
-      }}
+      className="
+        min-h-screen
+        flex items-center justify-center
+        p-4 pb-24
+        animate-fade-in-slow
+        bg-[radial-gradient(at_center_top,_rgb(24,36,88)_0%,_rgb(11,18,60)_100%)_fixed]
+      "
     >
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
@@ -41,12 +43,13 @@ export default function AccessForm({ onAccess }) {
         </div>
 
         <div
-          className="rounded-2xl p-6 sm:p-8 shadow-lg border"
-          style={{
-            background: "rgb(16, 26, 72)",
-            borderColor: "rgba(255, 204, 66, 0.4)",
-            boxShadow: "rgba(0, 0, 0, 0.35) 0px 4px 25px",
-          }}
+          className="
+            rounded-[16px]
+            py-6 px-6 sm:py-8 sm:px-8
+            border border-[rgba(255,204,66,0.4)]
+            bg-[rgb(16,26,72)]
+            shadow-[0_4px_25px_rgba(0,0,0,0.35)]
+          "
         >
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div>
@@ -57,7 +60,7 @@ export default function AccessForm({ onAccess }) {
                 Access Email
               </label>
               <div className="relative">
-                <EmailIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-slate-400" />
+                <EmailIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-slate-400"/>
                 <input
                   type="email"
                   id="email"
@@ -65,25 +68,33 @@ export default function AccessForm({ onAccess }) {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your purchase email"
                   required
-                  className="w-full pl-10 pr-4 py-3 rounded-lg placeholder-slate-400 focus:outline-none focus:ring-2 focus:border-transparent transition-all"
-                  style={{
-                    background: "rgba(255, 255, 255, 0.05)",
-                    borderColor: "rgba(255, 204, 66, 0.2)",
-                  }}
+                  className="
+                    w-full
+                    pl-10 pr-4 py-3
+                    rounded-lg
+                    placeholder-slate-400
+                    focus:outline-none focus:ring-2 focus:border-transparent
+                    transition-all
+                    bg-[rgba(255,255,255,0.05)]
+                  "
                 />
               </div>
             </div>
             <button
               type="submit"
-              className="w-full text-black font-semibold py-3 px-4 rounded-xl transition-all duration-200"
-              style={{
-                background:
-                  "linear-gradient(135deg, rgb(255, 216, 74) 0%, rgb(255, 190, 51) 100%)",
-                boxShadow: "rgba(0, 0, 0, 0.25) 0px 3px 10px",
-                filter: "brightness(1)",
-              }}
+              className="
+                w-full
+                text-black
+                font-semibold
+                py-3 px-4
+                rounded-xl
+                transition-all duration-200
+                bg-[linear-gradient(135deg,_rgb(255,216,74)_0%,_rgb(255,190,51)_100%)]
+                shadow-[0_3px_10px_rgba(0,0,0,0.25)]
+                brightness-100
+              "
             >
-              <LockIcon className="inline w-5 h-5 mr-2" />
+              <LockIcon className="inline w-5 h-5 mr-2"/>
               <span className="!font-semibold">Access Members Area</span>
             </button>
             <p className="text-[var(--text-muted)] text-sm text-center leading-relaxed">
@@ -94,7 +105,7 @@ export default function AccessForm({ onAccess }) {
 
           <div className="mt-6 pt-6 border-t border-white/10">
             <div className="flex items-center justify-center gap-2 text-[var(--text-muted)] text-sm mb-2">
-              <ShieldIcon className="w-4 h-4 text-green-400" />
+              <ShieldIcon className="w-4 h-4 text-green-400"/>
               <span className="text-[var(--text-light)]">Secure & Lifetime Access</span>
             </div>
             <p className="text-[var(--text-muted)]/70 text-xs text-center">
