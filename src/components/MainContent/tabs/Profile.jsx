@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { profileData } from "../../../data/profileData.js";
+import { modules } from "../../../data/contentData.js";
 
 function ProfileTab({ email }) {
+  const storageKey = `watchedSteps_${email}`;
+  const [watchedCount, setWatchedCount] = useState(0);
+  const totalSteps = modules.reduce((sum, mod) => sum + mod.steps.length, 0);
+  const percentage = Math.floor((watchedCount / totalSteps) * 100);
+
+  useEffect(() => {
+    const saved = localStorage.getItem(storageKey);
+    if (saved) {
+      const watchedSteps = JSON.parse(saved);
+      let count = 0;
+      Object.values(watchedSteps).forEach((mod) => {
+        count += Object.keys(mod).length;
+      });
+      setWatchedCount(count);
+    }
+  }, [storageKey]);
+
   return (
     <div className="max-w-2xl mx-auto">
       <div className="text-center mb-12">
@@ -17,16 +35,16 @@ function ProfileTab({ email }) {
           <div className="space-y-4">
             <div className="flex justify-between items-center">
               <span className="text-slate-300">Contents accessed</span>
-              <span className="text-yellow-400 font-semibold">1 / 31</span>
+              <span className="text-yellow-400 font-semibold">{watchedCount} / {totalSteps}</span>
             </div>
             <div className="w-full bg-slate-700 rounded-full h-3">
               <div
                 className="bg-gradient-to-r from-yellow-400 to-yellow-600 h-3 rounded-full transition-all duration-500"
-                style={{ width: "3%" }}
+                style={{ width: `${percentage}%` }}
               ></div>
             </div>
             <p className="text-slate-400 text-sm">
-              ✨ You have completed 3% of your spiritual journey.
+              ✨ You have completed {percentage}% of your spiritual journey.
             </p>
           </div>
         </div>
@@ -43,16 +61,7 @@ function ProfileTab({ email }) {
           </div>
         </div>
 
-        <div
-          className="
-            rounded-[16px]
-            px-8 py-6
-            border
-            border-[rgba(255,204,66,0.4)]
-            bg-[rgb(16,26,72)]
-            shadow-[0_4px_25px_rgba(0,0,0,0.35)]
-          "
-        >
+        <div className="rounded-[16px] px-8 py-6 border border-[rgba(255,204,66,0.4)] bg-[rgb(16,26,72)] shadow-[0_4px_25px_rgba(0,0,0,0.35)]">
           <button
             id="contact-support-profile"
             className="w-full bg-[var(--profile-button-background)] text-[var(--profile-button-text)] py-3 px-4 rounded-lg hover:bg-[var(--profile-button-background-hover)] transition-all duration-200 shadow-md"
@@ -68,16 +77,7 @@ function ProfileTab({ email }) {
           </button>
         </div>
 
-        <div
-          className="
-            rounded-[16px]
-            px-8 py-6
-            border
-            border-[rgba(255,204,66,0.4)]
-            bg-[rgb(16,26,72)]
-            shadow-[0_4px_25px_rgba(0,0,0,0.35)]
-          "
-        >
+        <div className="rounded-[16px] px-8 py-6 border border-[rgba(255,204,66,0.4)] bg-[rgb(16,26,72)] shadow-[0_4px_25px_rgba(0,0,0,0.35)]">
           <h3 className="text-xl font-semibold text-[var(--gold)] mb-4">
             Account Information
           </h3>
