@@ -43,7 +43,7 @@ export default function MainContent({ onLogout }) {
 function Header({ onLogout }) {
   const email = "sasha.speransky@gmail.com"; // replace if dynamic
   return (
-    <header className="bg-[#0b123c]/95 border-b border-[#ffcc42]/20 sticky top-0 z-50 backdrop-blur-sm">
+    <header className="bg-[var(--bg1)]/95 border-b border-[#ffcc42]/20 sticky top-0 z-50 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-4">
@@ -55,22 +55,22 @@ function Header({ onLogout }) {
               />
             </div>
             <h1
-              className="text-xl font-bold text-[#ffcc42]"
+              className="text-xl font-bold text-[var(--gold)]"
               style={{ fontWeight: 600 }}
             >
               Manuscript of Miracles
             </h1>
           </div>
           <div className="flex items-center space-x-6">
-            <span className="text-[#e5e8f0] text-sm hidden sm:inline">
+            <span className="text-sm hidden sm:inline">
               {email}
             </span>
             <button
               onClick={onLogout}
-              className="flex items-center space-x-1 sm:space-x-2 text-[#b0b5c8] hover:text-[#e5e8f0] transition-colors"
+              className="flex items-center space-x-1 sm:space-x-2 text-[var(--text-muted)] hover:text-[var(--text-light)] transition-colors"
             >
               <LogOutIcon className="w-4 h-4" />
-              <span className="text-sm hidden sm:inline text-[#e5e8f0]">Logout</span>
+              <span className="text-sm hidden sm:inline text-[var(--text-light)]">Logout</span>
             </button>
           </div>
         </div>
@@ -92,7 +92,7 @@ function NavTabs() {
 
   return (
     <>
-      <nav className="bg-[#0b123c] border-b border-[#ffcc42]/10">
+      <nav className="bg-[var(--bg1)] border-b border-[var(--gold)]/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex space-x-2 sm:space-x-8 overflow-x-auto">
             {tabs.map((tab, idx) => {
@@ -103,12 +103,12 @@ function NavTabs() {
                   onClick={() => setActiveTab(idx)}
                   className={`flex items-center space-x-1 sm:space-x-2 py-4 px-2 sm:px-3 transition-colors whitespace-nowrap ${
                     activeTab === idx
-                      ? "text-[#ffcc42] border-b-2 border-[#ffcc42]"
-                      : "text-[#ffffff] hover:opacity-80 border-b-2 border-transparent"
+                      ? "text-[var(--gold)] border-b-2 border-[var(--gold)]"
+                      : "text-[var(--white)] hover:opacity-80 border-b-2 border-transparent"
                   }`}
                 >
                   <Icon className="w-3 h-3 sm:w-4 sm:h-4" />
-                  <span className="font-medium text-xs sm:text-sm text-[#ffffff]">{tab.label}</span>
+                  <span className="font-medium text-xs sm:text-sm text-[var(--white)]">{tab.label}</span>
                 </button>
               );
             })}
@@ -131,7 +131,7 @@ function WelcomePopup() {
     <div className="fixed top-4 right-4 z-[10000] animate-fade-in">
       <div className="bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-3 rounded-xl shadow-2xl flex items-center gap-3 border border-green-400/30 backdrop-blur-sm">
         <CheckIcon className="lucide lucide-check-circle w-5 h-5" />
-        <span className="font-medium text-[17px]">
+        <span className="font-medium">
           Welcome back! Your spiritual materials are safely loaded.
         </span>
       </div>
