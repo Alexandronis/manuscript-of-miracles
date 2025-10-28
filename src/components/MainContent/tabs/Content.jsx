@@ -191,7 +191,10 @@ function ContentModules({ onOpenStep, watchedSteps }) {
 
 function StepModal({ module, stepIndex, onClose, onPrev, onNext }) {
   const step = module.steps[stepIndex];
-  const [activeTab, setActiveTab] = useState(step.pdfUrl ? "video" : "video");
+
+  const [activeTab, setActiveTab] = useState(
+    step.videoUrl && step.pdfUrl ? "video" : step.pdfUrl ? "pdf" : "video"
+  );
 
   const handleDownload = () => {
     const isVideo = activeTab === "video";
@@ -207,6 +210,8 @@ function StepModal({ module, stepIndex, onClose, onPrev, onNext }) {
     link.click();
     document.body.removeChild(link);
   };
+
+  const showTabs = step.videoUrl && step.pdfUrl;
 
   return (
     <div
@@ -231,7 +236,7 @@ function StepModal({ module, stepIndex, onClose, onPrev, onNext }) {
         </div>
 
         {/* PDF / Video tab switcher */}
-        {step.pdfUrl && (
+        {showTabs && (
           <div className="px-4 sm:px-6 pt-4">
             <div className="inline-flex rounded-xl overflow-hidden bg-slate-800 border border-slate-700">
               <button
@@ -260,7 +265,7 @@ function StepModal({ module, stepIndex, onClose, onPrev, onNext }) {
 
         {/* Content */}
         <div className="p-0 sm:p-4 flex-1 overflow-y-auto touch-pan-y">
-          {activeTab === "video" ? (
+          {activeTab === "video" && step.videoUrl ? (
             <div className="relative w-full h-[60vh] md:h-[65vh]">
               <iframe
                 src={`${step.videoUrl}?rel=0&modestbranding=1&controls=1`}
@@ -271,7 +276,7 @@ function StepModal({ module, stepIndex, onClose, onPrev, onNext }) {
                 allowFullScreen
               />
             </div>
-          ) : (
+          ) : step.pdfUrl ? (
             <div className="w-full h-[65vh] flex items-center justify-center bg-slate-900 rounded-xl">
               <iframe
                 src={step.pdfUrl}
@@ -279,12 +284,11 @@ function StepModal({ module, stepIndex, onClose, onPrev, onNext }) {
                 className="w-full h-full rounded-xl"
               />
             </div>
-          )}
+          ) : null}
 
           <div className="px-4 sm:px-6 pt-4">
             <p className="text-slate-300 text-sm sm:text-base">
-              Tap <span className="font-semibold">Play</span> to view inside the app. Prefer to save?
-              Use Download.
+              Tap <span className="font-semibold">Play</span> to view inside the app. Prefer to save? Use Download.
             </p>
           </div>
 
