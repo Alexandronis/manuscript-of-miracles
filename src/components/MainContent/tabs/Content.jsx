@@ -19,13 +19,10 @@ function ContentTab() {
 function SectionIntro() {
   return (
     <div className="text-center mb-12">
-      <h2
-        className="text-2xl sm:text-3xl font-bold text-[#ffcc42] mb-4"
-        style={{ fontWeight: 600 }}
-      >
+      <h2 className="text-2xl sm:text-3xl font-bold text-[var(--gold)] mb-4">
         Your Sacred Contents
       </h2>
-      <p className="text-[#c8ccdf] text-[17px] leading-relaxed">
+      <p className="text-[var(--text-secondary)] text-[17px] leading-relaxed">
         Tap a lesson below to read or watch inside the app.
       </p>
     </div>
@@ -51,7 +48,7 @@ function InstallButtons() {
               style={{
                 background: "linear-gradient(135deg, rgb(255, 216, 74) 0%, rgb(255, 190, 51) 100%)",
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 3px 10px",
-                color: "#000",
+                color: "var(--black)",
               }}
             >
               <Icon className="w-5 h-5" />
@@ -72,7 +69,7 @@ function InstallButtons() {
               style={{
                 background: "linear-gradient(135deg, rgb(255, 216, 74) 0%, rgb(255, 190, 51) 100%)",
                 boxShadow: "rgba(0, 0, 0, 0.25) 0px 4px 12px",
-                color: "#000",
+                color: "var(--black)",
                 filter: "brightness(1)",
               }}
             >
@@ -122,7 +119,7 @@ function ContentModules() {
             </div>
             <div className="lg:w-2/3">
               <h3
-                className="text-xl sm:text-2xl font-bold text-[#ffcc42] mb-4 font-['Marcellus']"
+                className="text-xl sm:text-2xl font-bold text-[var(--gold)] mb-4"
                 style={{ fontWeight: 600 }}
               >
                 {mod.title}
@@ -135,7 +132,7 @@ function ContentModules() {
                   >
                     <div className="flex items-center space-x-3">
                       <div className="w-5 h-5 border-2 border-slate-500 rounded-full"></div>
-                      <span className="text-[#e5e8f0] font-medium text-sm sm:text-base">
+                      <span className="font-medium text-sm sm:text-base">
                         {step}
                       </span>
                     </div>
