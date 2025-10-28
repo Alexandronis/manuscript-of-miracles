@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { buttons, modules } from "../../../data/contentData.js";
+import WatchedIcon from "../../icons/WatchedIcon.jsx";
 
 function ContentTab({ email }) {
   const storageKey = `watchedSteps_${email}`;
@@ -164,19 +165,7 @@ function ContentModules({ onOpenStep, watchedSteps }) {
                     >
                       <div className="flex items-center space-x-3">
                         {watched ? (
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            className="w-5 h-5 text-green-400"
-                          >
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                            <path d="m9 11 3 3L22 4" />
-                          </svg>
+                          <WatchedIcon className="w-5 h-5 text-green-400" />
                         ) : (
                           <div className="w-5 h-5 border-2 border-slate-500 rounded-full"></div>
                         )}
