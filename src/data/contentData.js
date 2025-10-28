@@ -26,13 +26,41 @@ export const modules = [
         videoUrl: "https://www.youtube.com/embed/V9qogeoyz3w",
         pdfUrl: "https://drive.google.com/file/d/1a4NyFifF8WZ-n2LJVvOiLpysrEKSRhRj/preview",
       },
-      { title: "2 - Day 1 - Restoration", videoUrl: "https://www.youtube.com/embed/example1" },
-      { title: "3 - Day 2 - Prosperity", videoUrl: "https://www.youtube.com/embed/example2" },
-      { title: "4 - Day 3 - Divine Freedom", videoUrl: "https://www.youtube.com/embed/example3" },
-      { title: "5 - Day 4 - Love Renewed", videoUrl: "https://www.youtube.com/embed/example4" },
-      { title: "6 - Day 5 - Divine Shield", videoUrl: "https://www.youtube.com/embed/example5" },
-      { title: "7 - Day 6 - Sacred Gratitude", videoUrl: "https://www.youtube.com/embed/example6" },
-      { title: "8 - Day 7 - Day of Grace", videoUrl: "https://www.youtube.com/embed/example7" },
+      {
+        title: "2 - Day 1 - Restoration",
+        videoUrl: "https://www.youtube.com/embed/6wTdV8ERNhY",
+        pdfUrl: "https://drive.google.com/file/d/1HmZdHfwYLeNs7PlZWV6ft3-9dUd5f6qM/preview",
+      },
+      {
+        title: "3 - Day 2 - Prosperity",
+        videoUrl: "https://www.youtube.com/embed/p4ireRi4wBE",
+        pdfUrl: "https://drive.google.com/file/d/1HlOxqse7AjT_cNw9gOd5jIaZA3wMwTyR/preview",
+      },
+      {
+        title: "4 - Day 3 - Divine Freedom",
+        videoUrl: "https://www.youtube.com/embed/KVvi9YZqAvY",
+        pdfUrl: "https://drive.google.com/file/d/1hgNw1wblH84dHmUqIlNvy18Z9G3AXq0-/preview",
+      },
+      {
+        title: "5 - Day 4 - Love Renewed",
+        videoUrl: "https://www.youtube.com/embed/ounhQovbKRk",
+        pdfUrl: "https://drive.google.com/file/d/1KNF3LTJRWzPiFRt2l0aIzGp7A1lCVGz5/preview",
+      },
+      {
+        title: "6 - Day 5 - Divine Shield",
+        videoUrl: "https://www.youtube.com/embed/yVIwQqkss3g",
+        pdfUrl: "https://drive.google.com/file/d/1al2QVCV1rt140SklwvR9L5y2O2GWiFeM/preview",
+      },
+      {
+        title: "7 - Day 6 - Sacred Gratitude",
+        videoUrl: "https://www.youtube.com/embed/AVBW-24Ebw8",
+        pdfUrl: "https://drive.google.com/file/d/10IlvW0BXci7nbyWooNl1APmyQKWHy6Tl/preview",
+      },
+      {
+        title: "8 - Day 7 - Day of Grace",
+        videoUrl: "https://www.youtube.com/embed/bMAMLpq1-4w",
+        pdfUrl: "https://drive.google.com/file/d/1cAu-43mRUdcxGOIcka13BHy4OWUW5mHK/preview",
+      },
     ],
   },
 ];
