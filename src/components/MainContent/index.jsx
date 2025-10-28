@@ -59,7 +59,7 @@ function Header({ onLogout }) {
               className="flex items-center space-x-1 sm:space-x-2 text-[#b0b5c8] hover:text-[#e5e8f0] transition-colors"
             >
               <LogOutIcon className="w-4 h-4" />
-              <span className="text-sm hidden sm:inline">Logout</span>
+              <span className="text-sm hidden sm:inline text-[#e5e8f0]">Logout</span>
             </button>
           </div>
         </div>
@@ -97,7 +97,7 @@ function NavTabs() {
                   }`}
                 >
                   <Icon className="w-3 h-3 sm:w-4 sm:h-4" />
-                  <span className="font-medium text-xs sm:text-sm">{tab.label}</span>
+                  <span className="font-medium text-xs sm:text-sm text-[#ffffff]">{tab.label}</span>
                 </button>
               );
             })}

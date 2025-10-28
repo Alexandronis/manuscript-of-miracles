@@ -84,7 +84,7 @@ export default function AccessForm({ onAccess }) {
               }}
             >
               <LockIcon className="inline w-5 h-5 mr-2" />
-              Access Members Area
+              <span className="!font-semibold">Access Members Area</span>
             </button>
             <p className="text-[#b0b5c8] text-sm text-center leading-relaxed">
               🌿 Access your sacred materials with peace of mind — this access
@@ -95,7 +95,7 @@ export default function AccessForm({ onAccess }) {
           <div className="mt-6 pt-6 border-t border-white/10">
             <div className="flex items-center justify-center gap-2 text-[#b0b5c8] text-sm mb-2">
               <ShieldIcon className="w-4 h-4 text-green-400" />
-              <span>Secure & Lifetime Access</span>
+              <span className="text-[#e5e8f0]">Secure & Lifetime Access</span>
             </div>
             <p className="text-[#b0b5c8]/70 text-xs text-center">
               verified by our Support Team
