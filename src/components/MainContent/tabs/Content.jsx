@@ -1,11 +1,5 @@
 import React, { useState } from "react";
-import {
-  HelpCircleIcon,
-  SmartphoneIcon,
-  AppleIcon,
-  DownloadIcon,
-} from "../../icons/index.jsx";
-import contentImage1 from "../../../assets/content-1.webp";
+import { buttons, modules } from "../../../data/contentData.js";
 
 function ContentTab() {
   const [activeModule, setActiveModule] = useState(null);
@@ -64,12 +58,6 @@ function SectionIntro() {
 }
 
 function InstallButtons() {
-  const buttons = [
-    { label: "Install for Android", icon: SmartphoneIcon },
-    { label: "Install for iPhone", icon: AppleIcon },
-    { label: "Contact Support", icon: HelpCircleIcon },
-    { label: "Download Manuscript (for print)", icon: DownloadIcon },
-  ];
   return (
     <div className="max-w-2xl mx-auto mb-8 space-y-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -129,23 +117,6 @@ function InstallButtons() {
 }
 
 function ContentModules({ onOpenStep, watchedSteps }) {
-  const modules = [
-    {
-      title: "Module 1 — How to Use the Manuscript of Miracles — The Beginning",
-      img: contentImage1,
-      steps: [
-        {
-          title: "Step 1 — Important Video",
-          videoUrl: "https://www.youtube.com/embed/ZJ86XnyJVQc",
-        },
-        {
-          title: "Step 2 — Your Daily Habit",
-          videoUrl: "https://www.youtube.com/embed/_U1AFHpgJBk",
-        },
-      ],
-    },
-  ];
-
   return (
     <div className="space-y-8">
       {modules.map((mod, idx) => (
