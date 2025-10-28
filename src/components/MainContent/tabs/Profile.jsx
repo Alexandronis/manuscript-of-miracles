@@ -1,6 +1,6 @@
 import React from "react";
 
-function ProfileTab() {
+function ProfileTab({ email }) {
   return (
     <div className="max-w-2xl mx-auto">
       <div className="text-center mb-12">
@@ -87,7 +87,7 @@ function ProfileTab() {
           <div className="space-y-3">
             <div className="flex justify-between">
               <span className="text-[var(--text-muted)]">Email:</span>
-              <span>sasha.speransky@gmail.com</span>
+              <span>{email}</span>
             </div>
             <div className="flex justify-between">
               <span className="text-slate-400">Status:</span>

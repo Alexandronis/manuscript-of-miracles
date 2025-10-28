@@ -16,7 +16,7 @@ export default function App() {
   };
 
   return email ? (
-    <MainContent onLogout={handleLogout} />
+    <MainContent email={email} onLogout={handleLogout} />
   ) : (
     <AccessForm onAccess={handleAccess} />
   );

@@ -15,7 +15,7 @@ import {
   CheckIcon,
 } from "../icons";
 
-export default function MainContent({ onLogout }) {
+export default function MainContent({ email, onLogout }) {
   const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
@@ -32,16 +32,15 @@ export default function MainContent({ onLogout }) {
           "radial-gradient(at center top, rgb(24, 36, 88) 0%, rgb(11, 18, 60) 100%) fixed",
       }}
     >
-      <Header onLogout={onLogout} />
-      <NavTabs />
+      <Header email={email} onLogout={onLogout} />
+      <NavTabs email={email} />
 
       {showPopup && <WelcomePopup />}
     </div>
   );
 }
 
-function Header({ onLogout }) {
-  const email = "sasha.speransky@gmail.com"; // replace if dynamic
+function Header({ email, onLogout }) {
   return (
     <header className="bg-[var(--bg1)]/95 border-b border-[#ffcc42]/20 sticky top-0 z-50 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -79,7 +78,7 @@ function Header({ onLogout }) {
   );
 }
 
-function NavTabs() {
+function NavTabs({ email }) {
   const tabs = [
     { label: "CONTENT", icon: BookIcon },
     { label: "FAQ", icon: HelpCircleIcon },
@@ -120,7 +119,7 @@ function NavTabs() {
         {activeTab === 1 && <FAQTab />}
         {activeTab === 2 && <ResultsTab />}
         {activeTab === 3 && <WordOfTheDayTab />}
-        {activeTab === 4 && <ProfileTab />}
+        {activeTab === 4 && <ProfileTab email={email} />}
       </main>
     </>
   );
