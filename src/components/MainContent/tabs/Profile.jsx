@@ -5,7 +5,7 @@ function ProfileTab() {
     <div className="max-w-2xl mx-auto">
       {/* Header */}
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600 mb-4 font-['Marcellus']">
+        <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600 mb-4">
           Your Spiritual Profile
         </h2>
         <p className="text-slate-300 text-lg">Track your transformation journey</p>
@@ -83,7 +83,7 @@ function ProfileTab() {
           }}
         >
           <h3
-            className="text-xl font-semibold text-[#ffcc42] mb-4 font-['Marcellus']"
+            className="text-xl font-semibold text-[#ffcc42] mb-4"
             style={{ fontWeight: 600 }}
           >
             Account Information

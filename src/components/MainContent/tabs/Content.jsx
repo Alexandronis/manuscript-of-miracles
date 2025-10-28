@@ -20,7 +20,7 @@ function SectionIntro() {
   return (
     <div className="text-center mb-12">
       <h2
-        className="text-2xl sm:text-3xl font-bold text-[#ffcc42] mb-4 font-['Marcellus']"
+        className="text-2xl sm:text-3xl font-bold text-[#ffcc42] mb-4"
         style={{ fontWeight: 600 }}
       >
         Your Sacred Contents

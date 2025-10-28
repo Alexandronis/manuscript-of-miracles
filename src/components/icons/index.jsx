@@ -10,3 +10,4 @@ export { default as ShieldIcon } from './ShieldIcon';
 export { default as SmartphoneIcon } from './SmartphoneIcon';
 export { default as StarIcon } from './StarIcon';
 export { default as UserIcon } from './UserIcon';
+export { default as CheckIcon } from './CheckIcon';

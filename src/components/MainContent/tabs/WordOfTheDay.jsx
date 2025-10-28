@@ -6,7 +6,7 @@ function WordOfTheDayTab() {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h2
-            className="text-2xl sm:text-3xl font-bold text-[#ffcc42] mb-4 font-['Marcellus']"
+            className="text-2xl sm:text-3xl font-bold text-[#ffcc42] mb-4"
             style={{ fontWeight: 600 }}
           >
             Word of the Day 🕊️
@@ -40,7 +40,7 @@ function WordOfTheDayTab() {
 
             <div className="space-y-6">
               <h3
-                className="text-lg sm:text-2xl md:text-3xl font-bold text-[#ffcc42] leading-relaxed animate-fade-in px-4 font-['Marcellus']"
+                className="text-lg sm:text-2xl md:text-3xl font-bold text-[#ffcc42] leading-relaxed animate-fade-in px-4"
                 style={{ fontWeight: 600 }}
               >
                 🌿 What you plant in prayer, you harvest in miracles.

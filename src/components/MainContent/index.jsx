@@ -12,7 +12,8 @@ import {
   HeartIcon,
   UserIcon,
   LogOutIcon,
-} from "../icons/index.jsx";
+  CheckIcon,
+} from "../icons";
 
 export default function MainContent({ onLogout }) {
   const [showPopup, setShowPopup] = useState(false);
@@ -54,7 +55,7 @@ function Header({ onLogout }) {
               />
             </div>
             <h1
-              className="text-xl font-bold text-[#ffcc42] font-['Marcellus']"
+              className="text-xl font-bold text-[#ffcc42]"
               style={{ fontWeight: 600 }}
             >
               Manuscript of Miracles
@@ -129,21 +130,7 @@ function WelcomePopup() {
   return (
     <div className="fixed top-4 right-4 z-[10000] animate-fade-in">
       <div className="bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-3 rounded-xl shadow-2xl flex items-center gap-3 border border-green-400/30 backdrop-blur-sm">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="lucide lucide-check-circle w-5 h-5"
-        >
-          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-          <path d="m9 11 3 3L22 4"></path>
-        </svg>
+        <CheckIcon className="lucide lucide-check-circle w-5 h-5" />
         <span className="font-medium text-[17px]">
           Welcome back! Your spiritual materials are safely loaded.
         </span>

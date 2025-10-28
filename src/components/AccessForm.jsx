@@ -29,7 +29,7 @@ export default function AccessForm({ onAccess }) {
               src={logoManuscript}
             />
           </div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-[#ffcc42] mb-2 font-['Marcellus']">
+          <h1 className="text-3xl sm:text-4xl font-bold text-[#ffcc42] mb-2">
             The Manuscript
           </h1>
           <p className="text-[#e5e8f0] text-lg font-light">

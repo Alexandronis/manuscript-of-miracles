@@ -5,7 +5,7 @@ function FAQTab() {
   return (
     <div className="max-w-4xl mx-auto">
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600 mb-4 font-['Marcellus']">
+        <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600 mb-4">
           Frequently Asked Questions
         </h2>
         <p className="text-slate-300 text-lg">
