@@ -44,14 +44,18 @@ function InstallButtons() {
           return (
             <button
               key={idx}
-              className="w-full inline-flex items-center justify-center gap-2 font-semibold py-3 px-4 rounded-xl transition-all duration-200"
-              style={{
-                background: "linear-gradient(135deg, rgb(255, 216, 74) 0%, rgb(255, 190, 51) 100%)",
-                boxShadow: "rgba(0, 0, 0, 0.25) 0px 3px 10px",
-                color: "var(--black)",
-              }}
+              className="
+                w-full inline-flex items-center justify-center gap-2
+                font-semibold
+                py-3 px-4
+                rounded-xl
+                text-[var(--black)]
+                transition-all duration-200
+                bg-[linear-gradient(135deg,_rgb(255,216,74)_0%,_rgb(255,190,51)_100%)]
+                shadow-[0_3px_10px_rgba(0,0,0,0.25)]
+              "
             >
-              <Icon className="w-5 h-5" />
+              <Icon className="w-5 h-5"/>
               {btn.label}
             </button>
           );
@@ -65,15 +69,17 @@ function InstallButtons() {
         return (
           <div className="mt-4" key={idx}>
             <button
-              className="w-full inline-flex items-center justify-center gap-2 font-semibold py-3 px-4 rounded-xl transition-all duration-200"
-              style={{
-                background: "linear-gradient(135deg, rgb(255, 216, 74) 0%, rgb(255, 190, 51) 100%)",
-                boxShadow: "rgba(0, 0, 0, 0.25) 0px 4px 12px",
-                color: "var(--black)",
-                filter: "brightness(1)",
-              }}
+              className="
+                w-full inline-flex items-center justify-center gap-2
+                font-semibold py-3 px-4 rounded-xl
+                text-[var(--black)]
+                transition-all duration-200
+                bg-[linear-gradient(135deg,_rgb(255,216,74)_0%,_rgb(255,190,51)_100%)]
+                shadow-[0_4px_12px_rgba(0,0,0,0.25)]
+                brightness-100
+              "
             >
-              <Icon className="w-5 h-5" />
+              <Icon className="w-5 h-5"/>
               {btn.label}
             </button>
           </div>
@@ -100,14 +106,14 @@ function ContentModules() {
       {modules.map((mod, idx) => (
         <div
           key={idx}
-          className="rounded-2xl p-6 border transition-all duration-200 shadow-md"
-          style={{
-            background: "rgb(16, 26, 72)",
-            borderColor: "rgba(255, 204, 66, 0.4)",
-            boxShadow: "rgba(0, 0, 0, 0.35) 0px 4px 25px",
-            borderRadius: "16px",
-            padding: "24px 32px",
-          }}
+          className="
+            rounded-[16px]
+            px-8 py-6
+            border border-[rgba(255,204,66,0.4)]
+            bg-[rgb(16,26,72)]
+            shadow-[0_4px_25px_rgba(0,0,0,0.35)]
+            transition-all duration-200
+          "
         >
           <div className="flex flex-col lg:flex-row gap-6">
             <div className="lg:w-1/3">
@@ -118,10 +124,7 @@ function ContentModules() {
               />
             </div>
             <div className="lg:w-2/3">
-              <h3
-                className="text-xl sm:text-2xl font-bold text-[var(--gold)] mb-4"
-                style={{ fontWeight: 600 }}
-              >
+              <h3 className="text-xl sm:text-2xl font-bold text-[var(--gold)] mb-4">
                 {mod.title}
               </h3>
               <div className="space-y-3">
