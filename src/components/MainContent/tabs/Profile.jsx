@@ -3,7 +3,6 @@ import React from "react";
 function ProfileTab() {
   return (
     <div className="max-w-2xl mx-auto">
-      {/* Header */}
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600 mb-4">
           Your Spiritual Profile
@@ -12,7 +11,6 @@ function ProfileTab() {
       </div>
 
       <div className="space-y-8">
-        {/* Journey Progress */}
         <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700/50">
           <h3 className="text-xl font-semibold text-yellow-400 mb-4">Journey Progress</h3>
           <div className="space-y-4">
@@ -32,7 +30,6 @@ function ProfileTab() {
           </div>
         </div>
 
-        {/* Spiritual Messages */}
         <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700/50">
           <h3 className="text-xl font-semibold text-yellow-400 mb-4">Spiritual Messages</h3>
           <div className="space-y-4">
@@ -49,49 +46,48 @@ function ProfileTab() {
           </div>
         </div>
 
-        {/* Support / Download Buttons */}
         <div
-          className="rounded-xl p-6 border"
-          style={{
-            background: "rgb(16, 26, 72)",
-            borderColor: "rgba(255, 204, 66, 0.4)",
-            boxShadow: "rgba(0, 0, 0, 0.35) 0px 4px 25px",
-            borderRadius: "16px",
-            padding: "24px 32px",
-          }}
+          className="
+            rounded-[16px]
+            px-8 py-6
+            border
+            border-[rgba(255,204,66,0.4)]
+            bg-[rgb(16,26,72)]
+            shadow-[0_4px_25px_rgba(0,0,0,0.35)]
+          "
         >
           <button
             id="contact-support-profile"
-            className="w-full bg-[#f6c94c] text-[#0a0a0a] font-semibold py-3 px-4 rounded-lg hover:bg-[#f4d36b] transition-all duration-200 shadow-md"
+            className="w-full bg-[var(--profile-button-background)] text-[var(--profile-button-text)] py-3 px-4 rounded-lg hover:bg-[var(--profile-button-background-hover)] transition-all duration-200 shadow-md"
+            style={{ fontWeight: 600 }}
           >
             Contact Support
           </button>
-          <button className="w-full bg-[#f6c94c] text-[#0a0a0a] font-semibold py-3 px-4 rounded-lg hover:bg-[#f4d36b] transition-all duration-200 shadow-md mt-3">
+          <button
+            className="w-full bg-[var(--profile-button-background)] text-[var(--profile-button-text)] py-3 px-4 rounded-lg hover:bg-[var(--profile-button-background-hover)] transition-all duration-200 shadow-md mt-3"
+            style={{ fontWeight: 600 }}
+          >
             Download Manuscript (for print)
           </button>
         </div>
 
-        {/* Account Information */}
         <div
-          className="rounded-xl p-6 border"
-          style={{
-            background: "rgb(16, 26, 72)",
-            borderColor: "rgba(255, 204, 66, 0.4)",
-            boxShadow: "rgba(0, 0, 0, 0.35) 0px 4px 25px",
-            borderRadius: "16px",
-            padding: "24px 32px",
-          }}
+          className="
+            rounded-[16px]
+            px-8 py-6
+            border
+            border-[rgba(255,204,66,0.4)]
+            bg-[rgb(16,26,72)]
+            shadow-[0_4px_25px_rgba(0,0,0,0.35)]
+          "
         >
-          <h3
-            className="text-xl font-semibold text-[#ffcc42] mb-4"
-            style={{ fontWeight: 600 }}
-          >
+          <h3 className="text-xl font-semibold text-[var(--gold)] mb-4">
             Account Information
           </h3>
           <div className="space-y-3">
             <div className="flex justify-between">
-              <span className="text-[#b0b5c8]">Email:</span>
-              <span className="text-[#e5e8f0]">sasha.speransky@gmail.com</span>
+              <span className="text-[var(--text-muted)]">Email:</span>
+              <span>sasha.speransky@gmail.com</span>
             </div>
             <div className="flex justify-between">
               <span className="text-slate-400">Status:</span>
