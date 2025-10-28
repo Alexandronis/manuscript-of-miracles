@@ -1,5 +1,6 @@
 import contentImage1 from "../assets/content-1.webp";
 import contentImage2 from "../assets/content-2.webp";
+import contentImage3 from "../assets/content-3.webp";
 import { AppleIcon, DownloadIcon, HelpCircleIcon, SmartphoneIcon } from "../components/icons/index.jsx";
 
 export const modules = [
@@ -8,11 +9,11 @@ export const modules = [
     img: contentImage1,
     steps: [
       {
-        title: "Step 1 — Important Video",
+        title: "1 - Step 1 — Important Video",
         videoUrl: "https://www.youtube.com/embed/ZJ86XnyJVQc",
       },
       {
-        title: "Step 2 — Your Daily Habit",
+        title: "2 - Step 2 — Your Daily Habit",
         videoUrl: "https://www.youtube.com/embed/_U1AFHpgJBk",
       },
     ],
@@ -60,6 +61,25 @@ export const modules = [
         title: "8 - Day 7 - Day of Grace",
         videoUrl: "https://www.youtube.com/embed/bMAMLpq1-4w",
         pdfUrl: "https://drive.google.com/file/d/1cAu-43mRUdcxGOIcka13BHy4OWUW5mHK/preview",
+      },
+    ],
+  },
+  {
+    title: "Module 3 — 7-Day Miracle Accelerator",
+    img: contentImage3,
+    steps: [
+      {
+        title: "1 - Guided Audios (INTRO)",
+        videoUrl: "https://drive.google.com/file/d/1wBJXmuQcHq_OWJEjrdd0Lk1QfEBCc5_c/preview",
+        pdfUrl: "https://drive.google.com/file/d/1k12q76mKYD3OSXLiNw5UWOX2wLUI-m_x/preview",
+      },
+      {
+        title: "2 - 7 Guided Audios (AM/PM)",
+        pdfUrl: "https://drive.google.com/file/d/1cAu-43mRUdcxGOIcka13BHy4OWUW5mHK/preview",
+      },
+      {
+        title: "3 - Calendar with Checklists",
+        pdfUrl: "https://drive.google.com/file/d/1Qm7tFXqIKcI8sluznLXt47dGePZ2hpwg/preview",
       },
     ],
   },
