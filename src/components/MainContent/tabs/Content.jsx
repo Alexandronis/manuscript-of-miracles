@@ -5,6 +5,7 @@ import {
   AppleIcon,
   DownloadIcon,
 } from "../../icons/index.jsx";
+import contentImage1 from '../../../assets/content-1.webp';
 
 function ContentTab() {
   return (
@@ -93,7 +94,7 @@ function ContentModules() {
   const modules = [
     {
       title: "Module 1 — How to Use the Manuscript of Miracles — The Beginning",
-      img: "/pt1.webp",
+      img: contentImage1,
       steps: [
         "1 - Step 1 — Important Video",
         "2 - Step 2 — Your Daily Habit",
