@@ -1,4 +1,5 @@
 import React from "react";
+import { profileData } from "../../../data/profileData.js";
 
 function ProfileTab({ email }) {
   return (
@@ -33,11 +34,7 @@ function ProfileTab({ email }) {
         <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700/50">
           <h3 className="text-xl font-semibold text-yellow-400 mb-4">Spiritual Messages</h3>
           <div className="space-y-4">
-            {[
-              { emoji: "🔥", text: "Stay strong. Miracles are near." },
-              { emoji: "🕊️", text: "Your faith is growing with each day of practice." },
-              { emoji: "⭐", text: "You are a channel of divine blessings." },
-            ].map((msg, idx) => (
+            {profileData.map((msg, idx) => (
               <div key={idx} className="flex items-center space-x-3 p-4 bg-slate-700/50 rounded-lg">
                 <span className="text-2xl">{msg.emoji}</span>
                 <p className="text-slate-300">{msg.text}</p>
