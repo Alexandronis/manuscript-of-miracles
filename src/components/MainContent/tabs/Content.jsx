@@ -5,15 +5,21 @@ import {
   AppleIcon,
   DownloadIcon,
 } from "../../icons/index.jsx";
-import contentImage1 from '../../../assets/content-1.webp';
+import contentImage1 from "../../../assets/content-1.webp";
 
 function ContentTab() {
   const [activeModule, setActiveModule] = useState(null);
   const [activeStepIndex, setActiveStepIndex] = useState(0);
+  const [watchedSteps, setWatchedSteps] = useState({});
 
   const handleOpenStep = (module, stepIdx) => {
     setActiveModule(module);
     setActiveStepIndex(stepIdx);
+
+    setWatchedSteps((prev) => ({
+      ...prev,
+      [module.title]: { ...(prev[module.title] || {}), [stepIdx]: true },
+    }));
   };
 
   const handleCloseModal = () => {
@@ -25,16 +31,14 @@ function ContentTab() {
     <>
       <SectionIntro />
       <InstallButtons />
-      <ContentModules onOpenStep={handleOpenStep} />
+      <ContentModules onOpenStep={handleOpenStep} watchedSteps={watchedSteps} />
 
       {activeModule && (
         <VideoModal
           module={activeModule}
           stepIndex={activeStepIndex}
           onClose={handleCloseModal}
-          onPrev={() =>
-            setActiveStepIndex((i) => Math.max(i - 1, 0))
-          }
+          onPrev={() => setActiveStepIndex((i) => Math.max(i - 1, 0))}
           onNext={() =>
             setActiveStepIndex((i) =>
               Math.min(i + 1, activeModule.steps.length - 1)
@@ -119,7 +123,7 @@ function InstallButtons() {
   );
 }
 
-function ContentModules({ onOpenStep }) {
+function ContentModules({ onOpenStep, watchedSteps }) {
   const modules = [
     {
       title: "Module 1 — How to Use the Manuscript of Miracles — The Beginning",
@@ -127,7 +131,7 @@ function ContentModules({ onOpenStep }) {
       steps: [
         {
           title: "Step 1 — Important Video",
-          videoUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
+          videoUrl: "https://www.youtube.com/embed/ZJ86XnyJVQc",
         },
         {
           title: "Step 2 — Your Daily Habit",
@@ -164,23 +168,42 @@ function ContentModules({ onOpenStep }) {
                 {mod.title}
               </h3>
               <div className="space-y-3">
-                {mod.steps.map((step, sidx) => (
-                  <button
-                    key={sidx}
-                    onClick={() => onOpenStep(mod, sidx)}
-                    className="flex items-center justify-between w-full p-3 sm:p-4 bg-white/5 hover:bg-white/10 rounded-lg transition-all duration-200 group"
-                  >
-                    <div className="flex items-center space-x-3">
-                      <div className="w-5 h-5 border-2 border-slate-500 rounded-full"></div>
-                      <span className="font-medium text-sm sm:text-base">
-                        {step.title}
+                {mod.steps.map((step, sidx) => {
+                  const watched = watchedSteps?.[mod.title]?.[sidx];
+                  return (
+                    <button
+                      key={sidx}
+                      onClick={() => onOpenStep(mod, sidx)}
+                      className="flex items-center justify-between w-full p-3 sm:p-4 bg-white/5 hover:bg-white/10 rounded-lg transition-all duration-200 group"
+                    >
+                      <div className="flex items-center space-x-3">
+                        {watched ? (
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            className="w-5 h-5 text-green-400"
+                          >
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                            <path d="m9 11 3 3L22 4" />
+                          </svg>
+                        ) : (
+                          <div className="w-5 h-5 border-2 border-slate-500 rounded-full"></div>
+                        )}
+                        <span className="font-medium text-sm sm:text-base">
+                          {step.title}
+                        </span>
+                      </div>
+                      <span className="text-slate-400 group-hover:text-yellow-400 text-xs sm:text-sm">
+                        Open
                       </span>
-                    </div>
-                    <span className="text-slate-400 group-hover:text-yellow-400 text-xs sm:text-sm">
-                      Open
-                    </span>
-                  </button>
-                ))}
+                    </button>
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -196,10 +219,9 @@ function VideoModal({ module, stepIndex, onClose, onPrev, onNext }) {
   const handleDownload = () => {
     if (!step.videoUrl) return alert("No video URL available to download.");
 
-    // Create a hidden <a> element for download
     const link = document.createElement("a");
     link.href = step.videoUrl;
-    link.target = '_blank';
+    link.target = "_blank";
     link.download = `${step.title || "video"}.mp4`;
     document.body.appendChild(link);
     link.click();
@@ -266,7 +288,6 @@ function VideoModal({ module, stepIndex, onClose, onPrev, onNext }) {
               </button>
             </div>
 
-            {/* ✅ Download button now works */}
             <button
               onClick={handleDownload}
               className="block w-full text-center bg-slate-700 hover:bg-slate-600 text-white font-semibold py-3 rounded-xl"
