@@ -236,7 +236,7 @@ function VideoModal({ module, stepIndex, onClose, onPrev, onNext }) {
     >
       <div
         className="relative mx-auto w-full max-w-4xl bg-[#0d163b] rounded-2xl
-        border border-white/10 shadow-lg max-h-[95vh] flex flex-col animate-fade-in"
+        border border-white/10 shadow-lg max-h-[95vh] flex flex-col animate-fade-in overflow-hidden"
       >
         {/* Header */}
         <div className="p-4 sm:p-6 border-b border-white/10 flex items-start justify-between sticky top-0 bg-[#0d163b]/95">
