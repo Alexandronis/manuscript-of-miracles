@@ -1,19 +1,29 @@
 import React, { useState } from "react";
 import { buttons, modules } from "../../../data/contentData.js";
 
-function ContentTab() {
+function ContentTab({ email }) {
+  const storageKey = `watchedSteps_${email}`;
+
+  const [watchedSteps, setWatchedSteps] = useState(() => {
+    const saved = localStorage.getItem(storageKey);
+    return saved ? JSON.parse(saved) : {};
+  });
+
   const [activeModule, setActiveModule] = useState(null);
   const [activeStepIndex, setActiveStepIndex] = useState(0);
-  const [watchedSteps, setWatchedSteps] = useState({});
 
   const handleOpenStep = (module, stepIdx) => {
     setActiveModule(module);
     setActiveStepIndex(stepIdx);
 
-    setWatchedSteps((prev) => ({
-      ...prev,
-      [module.title]: { ...(prev[module.title] || {}), [stepIdx]: true },
-    }));
+    setWatchedSteps((prev) => {
+      const updated = {
+        ...prev,
+        [module.title]: { ...(prev[module.title] || {}), [stepIdx]: true },
+      };
+      localStorage.setItem(storageKey, JSON.stringify(updated)); // save to localStorage
+      return updated;
+    });
   };
 
   const handleCloseModal = () => {

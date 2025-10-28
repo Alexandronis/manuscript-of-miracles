@@ -115,7 +115,7 @@ function NavTabs({ email }) {
         </div>
       </nav>
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
-        {activeTab === 0 && <ContentTab />}
+        {activeTab === 0 && <ContentTab email={email} />}
         {activeTab === 1 && <FAQTab />}
         {activeTab === 2 && <ResultsTab />}
         {activeTab === 3 && <WordOfTheDayTab />}
