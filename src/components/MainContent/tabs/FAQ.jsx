@@ -17,14 +17,14 @@ function FAQTab() {
         {faqData.map((item, index) => (
           <div
             key={index}
-            className="rounded-xl p-6 border backdrop-blur-sm"
-            style={{
-              background: "rgb(16, 26, 72)",
-              borderColor: "rgba(255, 204, 66, 0.4)",
-              boxShadow: "rgba(0, 0, 0, 0.35) 0px 4px 25px",
-              borderRadius: "16px",
-              padding: "24px 32px",
-            }}
+            className="
+              rounded-[16px]
+              px-8 py-6
+              border border-[rgba(255,204,66,0.4)]
+              bg-[rgb(16,26,72)]
+              shadow-[0_4px_25px_rgba(0,0,0,0.35)]
+              backdrop-blur-sm
+            "
           >
             <h3 className="text-lg font-semibold text-yellow-400 mb-3">
               {item.question}

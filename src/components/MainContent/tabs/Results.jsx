@@ -1,4 +1,5 @@
 import React from "react";
+import { StarYellowIcon } from "../../icons/index.jsx";
 
 const testimonials = [
   {
@@ -59,7 +60,7 @@ function ResultsTab() {
         {testimonials.map((t, index) => (
           <div
             key={index}
-            className="rounded-xl p-8 border border-yellow-400/40 backdrop-blur-sm bg-[#101A48] shadow-[0_4px_25px_rgba(0,0,0,0.35)]"
+            className="rounded-xl p-8 border border-yellow-400/40 backdrop-blur-sm bg-[var(--testimonial-background)] shadow-[0_4px_25px_rgba(0,0,0,0.35)]"
           >
             <div className="flex items-center space-x-4 mb-4">
               <img
@@ -71,21 +72,7 @@ function ResultsTab() {
                 <h4 className="font-semibold text-white">{t.name}</h4>
                 <div className="flex space-x-1 text-yellow-400">
                   {[...Array(5)].map((_, i) => (
-                    <svg
-                      key={i}
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="w-4 h-4"
-                    >
-                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                    </svg>
+                    <StarYellowIcon className="w-4 h-4" key={i} />
                   ))}
                 </div>
               </div>
