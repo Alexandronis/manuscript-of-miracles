@@ -87,6 +87,9 @@ function InstallButtons() {
                 transition-all duration-200
                 bg-[linear-gradient(135deg,_rgb(255,216,74)_0%,_rgb(255,190,51)_100%)]
                 shadow-[0_3px_10px_rgba(0,0,0,0.25)]
+                brightness-100
+                hover:shadow-[0_6px_16px_rgba(255,204,66,0.3)]
+                hover:brightness-110
               "
             >
               <Icon className="w-5 h-5" />
@@ -111,6 +114,8 @@ function InstallButtons() {
                 bg-[linear-gradient(135deg,_rgb(255,216,74)_0%,_rgb(255,190,51)_100%)]
                 shadow-[0_4px_12px_rgba(0,0,0,0.25)]
                 brightness-100
+                hover:shadow-[0_6px_16px_rgba(255,204,66,0.3)]
+                hover:brightness-110
               "
             >
               <Icon className="w-5 h-5" />

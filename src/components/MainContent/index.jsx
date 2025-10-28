@@ -20,7 +20,7 @@ export default function MainContent({ email, onLogout }) {
 
   useEffect(() => {
     setShowPopup(true);
-    const timer = setTimeout(() => setShowPopup(false), 5000); // auto-hide after 5s
+    const timer = setTimeout(() => setShowPopup(false), 4000);
     return () => clearTimeout(timer);
   }, []);
 
