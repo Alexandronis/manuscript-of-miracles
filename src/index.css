@@ -3,25 +3,42 @@
 
 /* common */
 :root {
-  font-family: "DM Sans", sans-serif;
+  --font-primary: "DM Sans", sans-serif;
+  --font-heading: "Marcellus", serif;
 }
 
 body {
   background: radial-gradient(ellipse at center top,#182458,#0b123c);
+  font-family: var(--font-primary);
+  font-size: 17px;
 }
 
 p, span, li, label, a {
+  font-family: var(--font-primary);
   font-weight: 400;
   letter-spacing: 0.2px;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
   letter-spacing: 0.5px;
+}
+
+h5, h6 {
+  font-family: var(--font-primary);
 }
 
 button, input, optgroup, select, textarea {
   font-weight: 400;
   letter-spacing: 0.2px;
+}
+
+input, select, textarea {
+  font-family: var(--font-primary);
+}
+
+button {
+  font-family: var(--font-primary);
 }
 
 a:hover, button:hover {
