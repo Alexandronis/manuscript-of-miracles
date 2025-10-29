@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { profileData } from "../../../data/profileData.js";
+import { fileToDownloadUrl, profileData } from "../../../data/profileData.js";
 import { modules } from "../../../data/contentData.js";
 import EmailSupportIcon from "../../icons/EmailSupportIcon.jsx";
 
@@ -24,6 +24,15 @@ function ProfileTab({ email }) {
       setWatchedCount(count);
     }
   }, [storageKey]);
+
+  const handleDownloadManuscript = () => {
+    const link = document.createElement("a");
+    link.href = fileToDownloadUrl;
+    link.download = "Manuscript.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <>
@@ -78,6 +87,7 @@ function ProfileTab({ email }) {
             </button>
             <button
               className="w-full bg-[var(--profile-button-background)] text-[var(--profile-button-text)] py-3 px-4 rounded-lg hover:bg-[var(--profile-button-background-hover)] transition-all duration-200 shadow-md mt-3"
+              onClick={() => handleDownloadManuscript()}
               style={{ fontWeight: 600 }}
             >
               Download Manuscript (for print)

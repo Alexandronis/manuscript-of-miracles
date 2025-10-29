@@ -3,3 +3,5 @@ export const profileData = [
   { emoji: "🕊️", text: "Your faith is growing with each day of practice." },
   { emoji: "⭐", text: "You are a channel of divine blessings." },
 ];
+
+export const fileToDownloadUrl = "https://drive.google.com/uc?export=download&id=1LdztZh4Mqt4B5n6Q0tBXniN5FcxQFtiv";
