@@ -1,17 +1,25 @@
 import React from "react";
 import logo from '../../../assets/manuscript.webp';
 import { HeartYellowIcon, StarCircleIcon } from "../../icons/index.jsx";
-import { coreActions, dailyHighlights, quotes } from "../../../data/wordOfTheDayData.js";
+import {
+  coreActions,
+  dailyHighlights,
+  quotes,
+  wordSubTitle,
+  wordSubTitleSecond,
+  wordTitle,
+  wordTitleSecond
+} from "../../../data/wordOfTheDayData.js";
 
 function WordOfTheDayTab() {
   return (
     <div className="max-w-4xl mx-auto space-y-12">
       <div className="text-center">
         <h2 className="text-2xl sm:text-3xl text-[var(--gold)] mb-4 font-semibold">
-          Word of the Day 🕊️
+          {wordTitle}️
         </h2>
         <p className="text-[var(--word-white)] text-base sm:text-lg">
-          A special message to brighten your day
+          {wordSubTitle}
         </p>
       </div>
 
@@ -44,9 +52,9 @@ function WordOfTheDayTab() {
 
       <div className="text-center">
         <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600 mb-4">
-          Word of the Day
+          {wordTitleSecond}
         </h2>
-        <p className="text-slate-300 text-lg">A special message to brighten your day</p>
+        <p className="text-slate-300 text-lg">{wordSubTitleSecond}</p>
       </div>
 
       <div className="relative">

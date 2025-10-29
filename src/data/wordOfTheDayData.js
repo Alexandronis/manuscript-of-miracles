@@ -16,3 +16,8 @@ export const quotes = [
     subtext: "May this word touch your heart and illuminate your path today.",
   }
 ];
+
+export const wordTitle = "Word of the Day 🕊️";
+export const wordSubTitle = "A special message to brighten your day";
+export const wordTitleSecond = "Word of the Day";
+export const wordSubTitleSecond = "A special message to brighten your day";
