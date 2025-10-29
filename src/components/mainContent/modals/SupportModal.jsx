@@ -40,7 +40,7 @@ function SupportModal({ onClose }) {
             sure your request is fully resolved.
           </p>
           <div className="pt-2">
-            <span className="text-[#f6c94c] font-semibold text-base sm:text-lg">
+            <span className="text-[#f6c94c] font-semibold text-base sm:text-lg" style={{ fontWeight: 600 }}>
               Email: contato.suportdesafio@gmail.com
             </span>
           </div>

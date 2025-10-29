@@ -18,7 +18,7 @@ function ResultsTab() {
         {resultsData.map((t, index) => (
           <div
             key={index}
-            className="rounded-xl p-8 border border-yellow-400/40 backdrop-blur-sm bg-[var(--testimonial-background)] shadow-[0_4px_25px_rgba(0,0,0,0.35)]"
+            className="rounded-xl p px-8 py-6 border border-yellow-400/40 backdrop-blur-sm bg-[var(--testimonial-background)] shadow-[0_4px_25px_rgba(0,0,0,0.35)]"
           >
             <div className="flex items-center space-x-4 mb-4">
               <img

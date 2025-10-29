@@ -105,7 +105,7 @@ function ProfileTab({ email }) {
               </div>
               <div className="flex justify-between">
                 <span className="text-slate-400">Status:</span>
-                <span className="text-yellow-400 font-semibold">Premium ⭐</span>
+                <span className="text-yellow-400 font-semibold" style={{ fontWeight: 600 }}>Premium ⭐</span>
               </div>
             </div>
           </div>
