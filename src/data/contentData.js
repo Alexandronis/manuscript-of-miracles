@@ -5,6 +5,7 @@ import contentImage4 from "../assets/content-4.webp";
 import contentImage5 from "../assets/content-5.webp";
 import contentImage6 from "../assets/content-6.webp";
 import contentImage7 from "../assets/content-7.webp";
+import contentImage8 from "../assets/content-8.webp";
 import { AppleIcon, DownloadIcon, HelpCircleIcon, SmartphoneIcon } from "../components/icons/index.jsx";
 
 export const modules = [
@@ -173,6 +174,25 @@ export const modules = [
         title: "Sacred Sunday",
         videoUrl: "https://drive.google.com/file/d/1JADHaD4xvgzOp1nEyQsCz8jGR60_cs-O/preview",
         pdfUrl: "https://drive.google.com/file/d/1GGSxyHEwWqBN_Ni7NdviOXwBHmTqNCM2/preview",
+      },
+    ],
+  },
+  {
+    title: "Module 8 — 21-Day Journey with Saint Michael",
+    img: contentImage8,
+    showSupportButton: true,
+    steps: [
+      {
+        title: "Introduction",
+        pdfUrl: "https://drive.google.com/file/d/1ls3OaoUnZ-RhRSgrpcU1gndevAhb_Daz/preview",
+      },
+      {
+        title: "The Chant Manual",
+        pdfUrl: "https://drive.google.com/file/d/1fW4NbtD9E5waSOPraRWZXlCAs55oBmG4/preview",
+      },
+      {
+        title: "The Saint Michael Chant in Audio",
+        pdfUrl: "https://drive.google.com/file/d/1ckmu-boriuDQASXqZlkpNYfxIqGK6Hww/preview",
       },
     ],
   },

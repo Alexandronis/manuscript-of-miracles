@@ -47,7 +47,7 @@ function ContentTab({ email }) {
     <>
       <SectionIntro />
       <InstallButtons onOpenInstall={handleOpenInstall} onOpenSupport={handleOpenSupport} />
-      <ContentModules onOpenStep={handleOpenStep} watchedSteps={watchedSteps} />
+      <ContentModules onOpenStep={handleOpenStep} onOpenSupport={handleOpenSupport} watchedSteps={watchedSteps} />
 
       {activeModule && (
         <StepModal
@@ -157,7 +157,7 @@ function InstallButtons({ onOpenInstall, onOpenSupport }) {
   );
 }
 
-function ContentModules({ onOpenStep, watchedSteps }) {
+function ContentModules({ onOpenStep, watchedSteps, onOpenSupport }) {
   return (
     <div className="space-y-8">
       {modules.map((mod, idx) => (
@@ -210,6 +210,27 @@ function ContentModules({ onOpenStep, watchedSteps }) {
                   );
                 })}
               </div>
+              {mod.showSupportButton && (
+                <div className="mt-6 pt-6 border-t border-white/10">
+                  <button
+                    onClick={onOpenSupport}
+                    className="
+                      w-full
+                      text-[var(--black)]
+                      font-semibold
+                      py-3 px-4
+                      rounded-xl
+                      transition-all duration-200
+                      bg-[linear-gradient(135deg,_rgb(255,216,74)_0%,_rgb(255,190,51)_100%)]
+                      shadow-[0_4px_12px_rgba(0,0,0,0.25)]
+                      hover:shadow-[0_6px_16px_rgba(255,204,66,0.3)]
+                      hover:brightness-110
+                    "
+                  >
+                    Contact Support
+                  </button>
+                </div>
+              )}
             </div>
           </div>
         </div>
