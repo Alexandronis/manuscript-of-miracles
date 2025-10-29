@@ -82,6 +82,15 @@ function SectionIntro() {
 }
 
 function InstallButtons({ onOpenInstall, onOpenSupport }) {
+  const handleDownloadManuscript = (url) => {
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "Manuscript.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="max-w-2xl mx-auto mb-8 space-y-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -91,7 +100,11 @@ function InstallButtons({ onOpenInstall, onOpenSupport }) {
           return (
             <button
               key={idx}
-              onClick={() => onOpenInstall(type)}
+              onClick={
+                btn.fileToDownload
+                  ? handleDownloadManuscript(btn.fileToDownload)
+                  : () => onOpenInstall(type)
+              }
               className="
                 w-full inline-flex items-center justify-center gap-2
                 font-semibold
@@ -117,6 +130,7 @@ function InstallButtons({ onOpenInstall, onOpenSupport }) {
       </p>
       {buttons.slice(2).map((btn, idx) => {
         const Icon = btn.icon;
+        const isDownloadButton = btn.fileToDownload;
         return (
           <div className="mt-4" key={idx}>
             <button
@@ -131,7 +145,7 @@ function InstallButtons({ onOpenInstall, onOpenSupport }) {
                 hover:shadow-[0_6px_16px_rgba(255,204,66,0.3)]
                 hover:brightness-110
               "
-              onClick={onOpenSupport}
+              onClick={isDownloadButton ? handleDownloadManuscript(btn.fileToDownload) : onOpenSupport}
             >
               <Icon className="w-5 h-5" />
               {btn.label}

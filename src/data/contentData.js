@@ -182,5 +182,5 @@ export const buttons = [
   { label: "Install for Android", icon: SmartphoneIcon },
   { label: "Install for iPhone", icon: AppleIcon },
   { label: "Contact Support", icon: HelpCircleIcon },
-  { label: "Download Manuscript (for print)", icon: DownloadIcon },
+  { label: "Download Manuscript (for print)", icon: DownloadIcon, fileToDownload: 'https://drive.google.com/uc?export=download&id=1LdztZh4Mqt4B5n6Q0tBXniN5FcxQFtiv' },
 ];
