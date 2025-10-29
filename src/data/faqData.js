@@ -50,3 +50,6 @@ export const faqData = [
       "Don't worry! God understands our human limitations. Simply resume the next day with even more faith and gratitude.",
   },
 ];
+
+export const faqTitle = "Frequently Asked Questions";
+export const faqSubTitle = "Answers to the main questions about the Manuscript of Miracles";

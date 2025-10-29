@@ -1,15 +1,15 @@
 import React from "react";
-import { faqData } from "../../../data/faqData";
+import { faqData, faqSubTitle, faqTitle } from "../../../data/faqData";
 
 function FAQTab() {
   return (
     <div className="max-w-4xl mx-auto">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600 mb-4">
-          Frequently Asked Questions
+          {faqTitle}
         </h2>
         <p className="text-slate-300 text-lg">
-          Answers to the main questions about the Manuscript of Miracles
+          {faqSubTitle}
         </p>
       </div>
 
