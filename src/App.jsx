@@ -1,6 +1,6 @@
 import { useState } from "react";
 import AccessForm from "./components/AccessForm";
-import MainContent from "./components/MainContent";
+import MainContent from "./components/mainContent";
 
 export default function App() {
   const [email, setEmail] = useState(localStorage.getItem("accessEmail") || "");
