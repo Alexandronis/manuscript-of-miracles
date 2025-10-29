@@ -102,7 +102,7 @@ function InstallButtons({ onOpenInstall, onOpenSupport }) {
               key={idx}
               onClick={
                 btn.fileToDownload
-                  ? handleDownloadManuscript(btn.fileToDownload)
+                  ? () => handleDownloadManuscript(btn.fileToDownload)
                   : () => onOpenInstall(type)
               }
               className="
@@ -145,7 +145,7 @@ function InstallButtons({ onOpenInstall, onOpenSupport }) {
                 hover:shadow-[0_6px_16px_rgba(255,204,66,0.3)]
                 hover:brightness-110
               "
-              onClick={isDownloadButton ? handleDownloadManuscript(btn.fileToDownload) : onOpenSupport}
+              onClick={isDownloadButton ? () => handleDownloadManuscript(btn.fileToDownload) : onOpenSupport}
             >
               <Icon className="w-5 h-5" />
               {btn.label}
