@@ -1,16 +1,16 @@
 import React from "react";
 import { StarYellowIcon } from "../../icons/index.jsx";
-import { resultsData } from "../../../data/resultsData.js";
+import { resultsData, resultsSubTitle, resultsTitle } from "../../../data/resultsData.js";
 
 function ResultsTab() {
   return (
     <div className="max-w-6xl mx-auto">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600 mb-4">
-          Real Results
+          {resultsTitle}
         </h2>
         <p className="text-slate-300 text-lg">
-          Testimonials from members who transformed their lives
+          {resultsSubTitle}
         </p>
       </div>
 

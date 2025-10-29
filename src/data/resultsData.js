@@ -40,3 +40,6 @@ export const resultsData = [
     text: "I found my soulmate after 3 weeks doing the heart prayers! Love has arrived! ❤️",
   },
 ];
+
+export const resultsTitle = "Real Results";
+export const resultsSubTitle = "Testimonials from members who transformed their lives";
