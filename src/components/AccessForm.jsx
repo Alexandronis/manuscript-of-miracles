@@ -82,17 +82,7 @@ export default function AccessForm({ onAccess }) {
             </div>
             <button
               type="submit"
-              className="
-                w-full
-                text-black
-                font-semibold
-                py-3 px-4
-                rounded-xl
-                transition-all duration-200
-                bg-[linear-gradient(135deg,_rgb(255,216,74)_0%,_rgb(255,190,51)_100%)]
-                shadow-[0_3px_10px_rgba(0,0,0,0.25)]
-                brightness-100
-              "
+              className="w-full bg-[var(--profile-button-background)] text-[var(--profile-button-text)] py-3 px-4 rounded-lg hover:bg-[var(--profile-button-background-hover)] transition-all duration-200 shadow-md"
             >
               <LockIcon className="inline w-5 h-5 mr-2"/>
               <span className="!font-semibold">Access Members Area</span>
