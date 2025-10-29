@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import SupportModal from "../modals/SupportModal.jsx";
-import { fileToDownloadUrl, profileData } from "../../../data/profileData.js";
+import {fileToDownloadUrl, profileData, profileSubTitle, profileTitle} from "../../../data/profileData.js";
 import { modules } from "../../../data/contentData.js";
 
 function ProfileTab({ email }) {
@@ -39,9 +39,9 @@ function ProfileTab({ email }) {
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600 mb-4">
-            Your Spiritual Profile
+            {profileTitle}
           </h2>
-          <p className="text-slate-300 text-lg">Track your transformation journey</p>
+          <p className="text-slate-300 text-lg">{profileSubTitle}</p>
         </div>
 
         <div className="space-y-8">
