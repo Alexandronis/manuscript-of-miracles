@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import logo from '../../assets/manuscript.webp';
+import logo from "../../assets/manuscript.webp";
+import WelcomePopup from "../../components/mainContent/modals/WelcomePopup.jsx"
 import FAQTab from "./tabs/FAQ.jsx";
 import ResultsTab from "./tabs/Results.jsx";
 import WordOfTheDayTab from "./tabs/WordOfTheDay.jsx";
-import ProfileTab from './tabs/Profile.jsx';
-import ContentTab from './tabs/Content.jsx';
+import ProfileTab from "./tabs/Profile.jsx";
+import ContentTab from "./tabs/Content.jsx";
 import {
   BookIcon,
   HelpCircleIcon,
@@ -12,7 +13,6 @@ import {
   HeartIcon,
   UserIcon,
   LogOutIcon,
-  CheckIcon,
 } from "../icons";
 
 export default function MainContent({ email, onLogout }) {
@@ -122,18 +122,5 @@ function NavTabs({ email }) {
         {activeTab === 4 && <ProfileTab email={email} />}
       </main>
     </>
-  );
-}
-
-function WelcomePopup() {
-  return (
-    <div className="fixed top-4 right-4 z-[10000] animate-fade-in">
-      <div className="bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-3 rounded-xl shadow-2xl flex items-center gap-3 border border-green-400/30 backdrop-blur-sm">
-        <CheckIcon className="lucide lucide-check-circle w-5 h-5" />
-        <span className="font-medium">
-          Welcome back! Your spiritual materials are safely loaded.
-        </span>
-      </div>
-    </div>
   );
 }
