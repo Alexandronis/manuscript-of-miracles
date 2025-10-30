@@ -109,7 +109,7 @@ export default function AccessForm({ onAccess }) {
             © 2025 Manuscript of Miracles | Secure Access | Verified Support
           </p>
           <p className="text-slate-500 text-xs mt-2">
-            ✉️ contato.suportdesafio@gmail.com
+            ✉️ mofm@divinescripture.org
           </p>
         </div>
       </div>

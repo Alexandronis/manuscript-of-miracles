@@ -41,7 +41,7 @@ function SupportModal({ onClose }) {
           </p>
           <div className="pt-2">
             <span className="text-[#f6c94c] font-semibold text-base sm:text-lg" style={{ fontWeight: 600 }}>
-              Email: contato.suportdesafio@gmail.com
+              Email: mofm@divinescripture.org
             </span>
           </div>
         </div>

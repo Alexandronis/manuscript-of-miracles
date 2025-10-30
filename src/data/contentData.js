@@ -15,11 +15,11 @@ export const modules = [
     steps: [
       {
         title: "Step 1 — Important Video",
-        videoUrl: "https://www.youtube.com/embed/ZJ86XnyJVQc",
+        videoUrl: "https://drive.google.com/file/d/18GUbeMX54-4stGGY1lt7etXG85mcBfvj/preview",
       },
       {
         title: "Step 2 — Your Daily Habit",
-        videoUrl: "https://www.youtube.com/embed/_U1AFHpgJBk",
+        videoUrl: "https://drive.google.com/file/d/1mlJQ5Ju0qqQVchLmsEf0vxxqr0kuzX5-/preview",
       },
     ],
   },
@@ -29,43 +29,43 @@ export const modules = [
     steps: [
       {
         title: "Introduction (Video + Guide)",
-        videoUrl: "https://www.youtube.com/embed/V9qogeoyz3w",
-        pdfUrl: "https://drive.google.com/file/d/1a4NyFifF8WZ-n2LJVvOiLpysrEKSRhRj/preview",
+        videoUrl: "https://drive.google.com/file/d/1Cgdvj120KNRRTTDOo5Sy9mBYlEkU1ICA/preview",
+        pdfUrl: "https://drive.google.com/file/d/1U75J4X19LuxZYQURRXjGdheBSLkn88UZ/preview",
       },
       {
         title: "Day 1 - Restoration",
-        videoUrl: "https://www.youtube.com/embed/6wTdV8ERNhY",
-        pdfUrl: "https://drive.google.com/file/d/1HmZdHfwYLeNs7PlZWV6ft3-9dUd5f6qM/preview",
+        videoUrl: "https://drive.google.com/file/d/1FQCrdh-rxqLo7dvM4WD0ZuWd3Xv54uM7/preview",
+        pdfUrl: "https://drive.google.com/file/d/1hosGouZ-Ix_slklwT5YmUXP8D5BbRV3c/preview",
       },
       {
         title: "Day 2 - Prosperity",
-        videoUrl: "https://www.youtube.com/embed/p4ireRi4wBE",
-        pdfUrl: "https://drive.google.com/file/d/1HlOxqse7AjT_cNw9gOd5jIaZA3wMwTyR/preview",
+        videoUrl: "https://drive.google.com/file/d/1BIh5lAI03eePZL-nmwcazvw6dDZMPeDw/preview",
+        pdfUrl: "https://drive.google.com/file/d/1azxbVg9ZzWLP675qo3JAiL-AEn6gh94z/preview",
       },
       {
         title: "Day 3 - Divine Freedom",
-        videoUrl: "https://www.youtube.com/embed/KVvi9YZqAvY",
-        pdfUrl: "https://drive.google.com/file/d/1hgNw1wblH84dHmUqIlNvy18Z9G3AXq0-/preview",
+        videoUrl: "https://drive.google.com/file/d/1UmaHW8gPblqJpOIPoSRwVZGdZ4XVriUH/preview",
+        pdfUrl: "https://drive.google.com/file/d/11QJltDW11vLXdfUCsjdvH4j2t3m6redf/preview",
       },
       {
         title: "Day 4 - Love Renewed",
-        videoUrl: "https://www.youtube.com/embed/ounhQovbKRk",
-        pdfUrl: "https://drive.google.com/file/d/1KNF3LTJRWzPiFRt2l0aIzGp7A1lCVGz5/preview",
+        videoUrl: "https://drive.google.com/file/d/1mjZUp_rHBxnBH_eXtze1woa_4OScDFyL/preview",
+        pdfUrl: "https://drive.google.com/file/d/1gSNuGl_BnoAOS5XFxyL9_V_f9yoL-xWo/preview",
       },
       {
         title: "Day 5 - Divine Shield",
-        videoUrl: "https://www.youtube.com/embed/yVIwQqkss3g",
-        pdfUrl: "https://drive.google.com/file/d/1al2QVCV1rt140SklwvR9L5y2O2GWiFeM/preview",
+        videoUrl: "https://drive.google.com/file/d/1TGlWh4RJ9R4z-kVQ4VlDEKxIC7OrgwB7/preview",
+        pdfUrl: "https://drive.google.com/file/d/1laiemiWiu6N7sTJbkUpDPF16jZOYPMRW/preview",
       },
       {
         title: "Day 6 - Sacred Gratitude",
-        videoUrl: "https://www.youtube.com/embed/AVBW-24Ebw8",
-        pdfUrl: "https://drive.google.com/file/d/10IlvW0BXci7nbyWooNl1APmyQKWHy6Tl/preview",
+        videoUrl: "https://drive.google.com/file/d/1j-3LnxqPYMpuzbUBF6onP0v6RV_a13c_/preview",
+        pdfUrl: "https://drive.google.com/file/d/14cCpkZm9Qz93eUuc6b904t4UAsgoeHlg/preview",
       },
       {
         title: "Day 7 - Day of Grace",
-        videoUrl: "https://www.youtube.com/embed/bMAMLpq1-4w",
-        pdfUrl: "https://drive.google.com/file/d/1cAu-43mRUdcxGOIcka13BHy4OWUW5mHK/preview",
+        videoUrl: "https://drive.google.com/file/d/1yxHILFA5KFFIvaFHTfkEz2MWs-TourCw/preview",
+        pdfUrl: "https://drive.google.com/file/d/1x2x7GismEbkkB1QSpRDOO5vzHjwULmT4/preview",
       },
     ],
   },
@@ -75,16 +75,16 @@ export const modules = [
     steps: [
       {
         title: "Guided Audios (INTRO)",
-        videoUrl: "https://drive.google.com/file/d/1wBJXmuQcHq_OWJEjrdd0Lk1QfEBCc5_c/preview",
-        pdfUrl: "https://drive.google.com/file/d/1k12q76mKYD3OSXLiNw5UWOX2wLUI-m_x/preview",
+        videoUrl: "https://drive.google.com/file/d/11d1dBULBOLxIrCVfmStqrElx9qnge3NL/preview",
+        pdfUrl: "https://drive.google.com/file/d/1EbH_7WD6-rUUk6FozPamJRx1fkUK_the/preview",
       },
       {
         title: "7 Guided Audios (AM/PM)",
-        pdfUrl: "https://drive.google.com/file/d/1cAu-43mRUdcxGOIcka13BHy4OWUW5mHK/preview",
+        pdfUrl: "https://drive.google.com/file/d/1fd8pQc6Fqs0-I_KevSlbKrH7hwygU1j7/preview",
       },
       {
         title: "Calendar with Checklists",
-        pdfUrl: "https://drive.google.com/file/d/1Qm7tFXqIKcI8sluznLXt47dGePZ2hpwg/preview",
+        pdfUrl: "https://drive.google.com/file/d/1yak8YO-9AcJ6PTevIyMfo0r6Iu1IRvem/preview",
       },
     ],
   },
@@ -94,19 +94,19 @@ export const modules = [
     steps: [
       {
         title: "The Chosen Ones' Activation Ritual",
-        pdfUrl: "https://drive.google.com/file/d/1XoSpOyIhsES27T0STWKRngDjKMTwnEX8/preview",
+        pdfUrl: "https://drive.google.com/file/d/1KwBdHUx-n_XSzk0S-X-ZNI4jJ4w5b4Z8/preview",
       },
       {
         title: "Video - Activation Ritual",
-        pdfUrl: "https://drive.google.com/file/d/1xNsGdeI8LA9Ci8fwlTKHaBTuKg983pvp/preview",
+        pdfUrl: "https://drive.google.com/file/d/19IZFgBPQCpMy7OIoEVQbvCMai-bdfrLD/preview",
       },
       {
         title: "40 Guided Daily Prayers - Day 1 to Day 20",
-        pdfUrl: "https://drive.google.com/file/d/1fm8yw3X43kQ9BCOFTHWDPq0tvQltvKe_/preview",
+        pdfUrl: "https://drive.google.com/file/d/1Nh2qu3MRef-Lisxq7YOB2M_f-9RA17Cy/preview",
       },
       {
         title: "40 Guided Daily Prayers - Day 21 to Day 40",
-        pdfUrl: "https://drive.google.com/file/d/11YUXBTVNwGsY9BM2sFzgeEEydzj93P-i/preview",
+        pdfUrl: "https://drive.google.com/file/d/1ynXKVhH3YJIJ-UMVNukk3Aseboezc1x8/preview",
       },
     ],
   },
@@ -116,7 +116,7 @@ export const modules = [
     steps: [
       {
         title: "7 Hebrew Prayers",
-        pdfUrl: "https://drive.google.com/file/d/13Bd-fgJOkRKX_MbmWvtycRyPCzzQpZSM/preview",
+        pdfUrl: "https://drive.google.com/file/d/1JspIlUj2_Sksccd4lMuJ_uoDtWF5I8yt/preview",
       },
     ],
   },
@@ -126,23 +126,23 @@ export const modules = [
     steps: [
       {
         title: "The 7 “Forbidden” Psalms",
-        pdfUrl: "https://drive.google.com/file/d/1sjlvcMUbvRtVFvJZJIz-wnIxcTaeXZBy/preview",
+        pdfUrl: "https://drive.google.com/file/d/11lEMLsFwrWwbs0JhR0jBWgq5WOPMokOC/preview",
       },
       {
         title: "The Psalm of Divine Justice",
-        pdfUrl: "https://drive.google.com/file/d/1k3qtQsaO_EzhaODky8dbRDt7FH7iCtBu/preview",
+        pdfUrl: "https://drive.google.com/file/d/1x4KFLNI6kX2FvRwijtNe2mWDMRwXo12C/preview",
       },
       {
         title: "Audio - Week 1",
-        pdfUrl: "https://drive.google.com/file/d/1A5rq2YCcq3Zn8ogShTGTF8oCqGjL6tQY/preview",
+        pdfUrl: "https://drive.google.com/file/d/1IPhlVrlODv7HYwfZnkFDwm3JHghXCpEH/preview",
       },
       {
         title: "Audio - Week 2",
-        pdfUrl: "https://drive.google.com/file/d/1VcCnyR6yyUEIP6fM3puYuqYJSTPYZHOG/preview",
+        pdfUrl: "https://drive.google.com/file/d/1A5vjkfsum2DeYeunDwuhlv_zjnpioqQ5/preview",
       },
       {
         title: "Audio - Week 3",
-        pdfUrl: "https://drive.google.com/file/d/184SFA-D-J4MW1HCh2BqBmEi_0EvOOeE_/preview",
+        pdfUrl: "https://drive.google.com/file/d/1gY8386kOEqfnhElgyaeXtnttzSahMfGq/preview",
       },
     ],
   },
@@ -152,28 +152,28 @@ export const modules = [
     steps: [
       {
         title: "Sacred Sleep",
-        videoUrl: "https://drive.google.com/file/d/1mMsNIGLgyfHjnAU3bx1qoshB7Oes2cYP/preview",
-        pdfUrl: "https://drive.google.com/file/d/10PdUXBQgdg_1Fl84MndsviYvLXQvDYjO/preview",
+        videoUrl: "https://drive.google.com/file/d/1GX1NMQwXTWFaztWm2eLs41EHSz67YWqk/preview",
+        pdfUrl: "https://drive.google.com/file/d/1jWRMGCZjwDGjt0tvmlERvSGy1K81yZVC/preview",
       },
       {
         title: "Money Magnet",
-        videoUrl: "https://drive.google.com/file/d/1pwIr3c9CargfQlGTzg_FykV1imFHRkfw/preview",
-        pdfUrl: "https://drive.google.com/file/d/1ShTAHVLFPFF_26bu_L9KmuJtgohpCeuW/preview",
+        videoUrl: "https://drive.google.com/file/d/10A-Kk6ReZ0vmkjJ__ddi_RiZhEVFgy8c/preview",
+        pdfUrl: "https://drive.google.com/file/d/1SFlk1gKqtngpjDlmm1MyyZVegdF3wQDx/preview",
       },
       {
         title: "Ease the Pain",
-        videoUrl: "https://drive.google.com/file/d/1XDXtuN9g7_FNQzOq3VlogSfobDTx5Ifr/preview",
-        pdfUrl: "https://drive.google.com/file/d/1uaN7n8j1Q54jjpLLOZpGWhuCdHoj67XA/preview",
+        videoUrl: "https://drive.google.com/file/d/1PELsM47huOFmp-6tBEXZ9huNec0Olhzd/preview",
+        pdfUrl: "https://drive.google.com/file/d/15gawkWgNukK4bTqd_umo8GBVEs4JHbvo/preview",
       },
       {
         title: "Morning Clarity",
-        videoUrl: "https://drive.google.com/file/d/1oIL4UH4sUIWudX0B9cRnI3FEz_frLPop/preview",
-        pdfUrl: "https://drive.google.com/file/d/1GftIGhucWaXb4ujnoJyleZcYmzMNvl75/preview",
+        videoUrl: "https://drive.google.com/file/d/1H4UGh5vDWYtzuhdP2mp1zze2Rt5fv5Zy/preview",
+        pdfUrl: "https://drive.google.com/file/d/1Z4Uiz8yW6KqtdUcadO5OpPl_yiPgnn7C/preview",
       },
       {
         title: "Sacred Sunday",
-        videoUrl: "https://drive.google.com/file/d/1JADHaD4xvgzOp1nEyQsCz8jGR60_cs-O/preview",
-        pdfUrl: "https://drive.google.com/file/d/1GGSxyHEwWqBN_Ni7NdviOXwBHmTqNCM2/preview",
+        videoUrl: "https://drive.google.com/file/d/1xu73bhSvFLgv4mqvu3cFV2X58qYUNUuY/preview",
+        pdfUrl: "https://drive.google.com/file/d/1J2BN_bsCCqyDKlNM_FR3_hDmP15m1qpM/preview",
       },
     ],
   },
@@ -184,15 +184,15 @@ export const modules = [
     steps: [
       {
         title: "Introduction",
-        pdfUrl: "https://drive.google.com/file/d/1ls3OaoUnZ-RhRSgrpcU1gndevAhb_Daz/preview",
+        pdfUrl: "https://drive.google.com/file/d/1m6cswOgT-_jZ26uvxIcEy5iEP1BemdVq/preview",
       },
       {
         title: "The Chant Manual",
-        pdfUrl: "https://drive.google.com/file/d/1fW4NbtD9E5waSOPraRWZXlCAs55oBmG4/preview",
+        pdfUrl: "https://drive.google.com/file/d/19hscdMLxECnskxiaawIltZ98T5J7y7eX/preview",
       },
       {
         title: "The Saint Michael Chant in Audio",
-        pdfUrl: "https://drive.google.com/file/d/1ckmu-boriuDQASXqZlkpNYfxIqGK6Hww/preview",
+        pdfUrl: "https://drive.google.com/file/d/15iiF8PH-R-xdw1VLJt-KNICpDUmkugOc/preview",
       },
     ],
   },
@@ -202,5 +202,5 @@ export const buttons = [
   { label: "Install for Android", icon: SmartphoneIcon },
   { label: "Install for iPhone", icon: AppleIcon },
   { label: "Contact Support", icon: HelpCircleIcon },
-  { label: "Download Manuscript (for print)", icon: DownloadIcon, fileToDownload: "https://drive.google.com/uc?export=download&id=1LdztZh4Mqt4B5n6Q0tBXniN5FcxQFtiv" },
+  { label: "Download Manuscript (for print)", icon: DownloadIcon, fileToDownload: "https://drive.google.com/uc?export=download&id=1F0FILifW3GX5W7xt1ZVC2MTtvOoRMEDI" },
 ];
